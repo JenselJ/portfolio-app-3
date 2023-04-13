@@ -4,12 +4,14 @@ module.exports = {
   theme: {
     fontFamily: {
       mono: "Fira Code",
+      sans: "Inter",
     },
     extend: {
       colors: {
         aqua: "#59ffd5",
-        gray: "#c5d0f5",
-        gray2: "#7d87a7",
+        gray2: "#c5d0f5",
+        gray: "#7d87a7",
+        gray3: "#8792b0",
       },
     },
   },

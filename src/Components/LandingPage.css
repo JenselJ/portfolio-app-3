@@ -56,5 +56,10 @@
 }
 
 .main-content-grandchild {
-  height: 500px;
+  height: 400px;
+  width: 800px;
+}
+
+.welcome {
+  font-size: 100px;
 }

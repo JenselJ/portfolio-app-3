@@ -11,7 +11,7 @@ const LandingPage = () => {
         <div className="main-div-child">
           <div className="nav-div h-12 flex justify-between px-4 items-center font-mono">
             <div className="text-gray">Logo</div>
-            <div className="text-gray flex items-center">
+            <div className="text-gray3 flex items-center">
               <div className="mr-8">
                 <a className="text-aqua">1.</a> Home
               </div>
@@ -29,10 +29,24 @@ const LandingPage = () => {
               </div>
             </div>
           </div>
-          <div className="main-content border border-red-50 pb-12">
-            <div className="main-content-child border border-red-500">
-              <div className="main-content-grandchild border border-red-500">
-                Welcome
+          <div className="main-content pb-12">
+            <div className="main-content-child flex items-center">
+              <div className="ml-32 main-content-grandchild font-sans text-gray">
+                <div className="welcome text-gray2 font-semibold">Welcome.</div>
+                <div className="text-4xl text-gray font-semibold">
+                  I'm Sunny and I build things for the web.
+                </div>
+                <div className="mt-8 text-lg">
+                  I'm a junior web developer working part-time at{" "}
+                  <a className="text-aqua">SurryHQ.</a> My goal right now is to
+                  transition into a full-time role where I can grow my skillset
+                  and break deeper into the industry.
+                </div>
+                <div className="mt-4 text-lg">
+                  I'm comfortable working full stack but my strength lies in
+                  front-end (JavaScript) where I have commercial experience in
+                  Angular and React.
+                </div>
               </div>
             </div>
           </div>
