@@ -46,3 +46,15 @@
   width: 100%;
   background-color: #0d1829;
 }
+
+.main-content {
+  height: 100%;
+}
+
+.main-content-child {
+  height: 100%;
+}
+
+.main-content-grandchild {
+  height: 500px;
+}
