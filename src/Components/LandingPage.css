@@ -63,3 +63,18 @@
 .welcome {
   font-size: 100px;
 }
+
+.socials {
+  height: 100%;
+  width: 200px;
+}
+
+.projects-div {
+  height: 100vh;
+}
+
+.app-div {
+  height: 200vh;
+  display: flex;
+  flex-direction: column;
+}
