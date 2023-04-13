@@ -69,7 +69,8 @@
   width: 200px;
 }
 
-.projects-div {
+.about-div {
+  margin-top: 100vh;
   height: 100vh;
 }
 
@@ -77,4 +78,16 @@
   height: 200vh;
   display: flex;
   flex-direction: column;
+}
+
+.about-main {
+  height: 80%;
+  width: 80%;
+}
+
+.line {
+  height: 1px;
+  background-color: #202f4a;
+  width: 200px;
+  margin-left: 20px;
 }

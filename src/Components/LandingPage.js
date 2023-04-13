@@ -59,7 +59,20 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-      <div className="projects-div">projects</div>
+      <div className="about-div flex items-center justify-center">
+        <div className="about-main flex">
+          <div className="border border-red-500 w-2/3 py-3 px-4">
+            <div className="about-title flex items-center">
+              <div className="text-gray2 font-sans text-2xl">
+                <a className="text-aqua font-mono">01.</a>
+                <a className="font-bold"> About Me</a>
+              </div>
+              <div className="line"></div>
+            </div>
+          </div>
+          <div className="text-aqua">photo</div>
+        </div>
+      </div>
     </div>
   );
 };
