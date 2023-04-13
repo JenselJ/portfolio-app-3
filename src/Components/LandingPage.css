@@ -18,6 +18,7 @@
   height: 0;
   border-top: 300px solid #59ffd5;
   border-right: 300px solid transparent;
+  border-top-left-radius: 15px;
 }
 
 .triangle-bottom-right {
@@ -28,6 +29,7 @@
   position: absolute;
   bottom: 0;
   right: 0;
+  border-bottom-right-radius: 15px;
 }
 
 .main-div {
