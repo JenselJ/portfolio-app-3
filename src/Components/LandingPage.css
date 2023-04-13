@@ -1,0 +1,46 @@
+.base-div {
+  height: calc(100vh - 80px);
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.triangle-parent {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.triangle-top-left {
+  width: 0;
+  height: 0;
+  border-top: 300px solid #59ffd5;
+  border-right: 300px solid transparent;
+}
+
+.triangle-bottom-right {
+  width: 0;
+  height: 0;
+  border-bottom: 300px solid #59ffd5;
+  border-left: 300px solid transparent;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.main-div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.main-div-child {
+  height: 100%;
+  width: 100%;
+  background-color: #0d1829;
+}
