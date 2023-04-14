@@ -64,9 +64,9 @@
   font-size: 100px;
 }
 
-.socials {
+.photo {
   height: 100%;
-  width: 200px;
+  width: 450px;
 }
 
 .about-div {
@@ -90,4 +90,22 @@
   background-color: #202f4a;
   width: 200px;
   margin-left: 20px;
+}
+
+.sunny {
+  height: 300px;
+  width: 300px;
+}
+
+.sunny-wrapper {
+  height: 100%;
+  width: 100%;
+  z-index: 20;
+  background-color: #59ffd5;
+  opacity: 25%;
+  position: relative;
+}
+
+.sunny-img {
+  z-index: 10;
 }

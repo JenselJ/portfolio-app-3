@@ -1,4 +1,5 @@
 import "./LandingPage.css";
+import sunny from "../assets/sunny.JPG";
 
 const LandingPage = () => {
   return (
@@ -16,14 +17,14 @@ const LandingPage = () => {
                 <div className="mr-8">
                   <a className="text-aqua">1.</a> Home
                 </div>
-                <div className="mr-8">
+                {/* <div className="mr-8">
                   <a className="text-aqua">2.</a> About
+                </div> */}
+                <div className="mr-8">
+                  <a className="text-aqua">2.</a> Projects
                 </div>
                 <div className="mr-8">
-                  <a className="text-aqua">3.</a> Projects
-                </div>
-                <div className="mr-8">
-                  <a className="text-aqua">4.</a> Contact
+                  <a className="text-aqua">3.</a> Contact
                 </div>
                 <div className="border border-aqua text-aqua rounded-md px-3 py-2">
                   Resume
@@ -31,8 +32,8 @@ const LandingPage = () => {
               </div>
             </div>
             <div className="main-content pb-12">
-              <div className="main-content-child flex items-center justify-between">
-                <div className="ml-40 main-content-grandchild font-sans text-gray">
+              <div className="main-content-child flex items-center">
+                <div className="ml-32 main-content-grandchild font-sans text-gray">
                   <div className="welcome text-gray2 font-semibold">
                     Welcome.
                   </div>
@@ -51,15 +52,18 @@ const LandingPage = () => {
                     Angular and React.
                   </div>
                 </div>
-                <div className="socials">
-                  <div></div>
+                <div className="photo flex items-center ml-32">
+                  <div className="sunny">
+                    <div className="sunny-wrapper"></div>
+                    <img className="rounded sunny-img" src={sunny}></img>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="about-div flex items-center justify-center">
+      {/* <div className="about-div flex items-center justify-center">
         <div className="about-main flex">
           <div className="border border-red-500 w-2/3 py-3 px-4">
             <div className="about-title flex items-center">
@@ -67,12 +71,13 @@ const LandingPage = () => {
                 <a className="text-aqua font-mono">01.</a>
                 <a className="font-bold"> About Me</a>
               </div>
+              <div></div>
               <div className="line"></div>
             </div>
           </div>
           <div className="text-aqua">photo</div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
