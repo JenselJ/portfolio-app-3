@@ -98,14 +98,39 @@
 }
 
 .sunny-wrapper {
-  height: 100%;
-  width: 100%;
-  z-index: 20;
+  height: 300px;
+  width: 300px;
   background-color: #59ffd5;
-  opacity: 25%;
-  position: relative;
+  position: absolute;
+  z-index: 11;
+  transition: opacity 0.5s;
+  opacity: 10%;
+}
+
+.sunny-wrapper:hover {
+  transition: opacity 0.5s;
+  opacity: 0;
 }
 
 .sunny-img {
+  /* opacity: 70%; */
+  height: 300px;
+  width: 300px;
   z-index: 10;
+  position: absolute;
+}
+
+.sunny-outline {
+  z-index: 0;
+  border: 2px solid #59ffd5;
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  transition: transform 0.5s;
+  transform: translate(20px, 20px);
+}
+
+.sunny:hover .sunny-outline {
+  transition: transform 0.5s;
+  transform: translate(15px, 15px);
 }

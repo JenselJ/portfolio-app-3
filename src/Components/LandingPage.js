@@ -33,7 +33,7 @@ const LandingPage = () => {
             </div>
             <div className="main-content pb-12">
               <div className="main-content-child flex items-center">
-                <div className="ml-32 main-content-grandchild font-sans text-gray">
+                <div className="ml-32 main-content-grandchild font-sans text-gray mb-20">
                   <div className="welcome text-gray2 font-semibold">
                     Welcome.
                   </div>
@@ -53,9 +53,10 @@ const LandingPage = () => {
                   </div>
                 </div>
                 <div className="photo flex items-center ml-32">
-                  <div className="sunny">
-                    <div className="sunny-wrapper"></div>
-                    <img className="rounded sunny-img" src={sunny}></img>
+                  <div className="sunny mt-20">
+                    <div className="sunny-wrapper rounded-lg px-1 py-1"></div>
+                    <img className="rounded-lg sunny-img" src={sunny}></img>
+                    <div className="sunny-outline rounded-lg"></div>
                   </div>
                 </div>
               </div>
