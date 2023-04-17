@@ -10,8 +10,8 @@ module.exports = {
       colors: {
         aqua: "#59ffd5",
         gray2: "#c5d0f5",
-        gray: "#7d87a7",
-        gray3: "#8792b0",
+        gray: "#8892B0",
+        gray3: "#CCD6F6",
       },
     },
   },

@@ -32,7 +32,7 @@ const LandingPage = () => {
               </div>
             </div>
             <div className="main-content pb-12">
-              <div className="main-content-child flex items-center">
+              <div className="main-content-child flex items-center justify-between">
                 <div className="ml-32 main-content-grandchild font-sans text-gray mb-20">
                   <div className="welcome text-gray2 font-semibold">
                     Welcome.
@@ -47,12 +47,12 @@ const LandingPage = () => {
                     skillset and break deeper into the industry.
                   </div>
                   <div className="mt-4 text-lg">
-                    I'm comfortable working full stack but my strength lies in
+                    I'm comfortable working full-stack but my strength lies in
                     front-end (JavaScript) where I have commercial experience in
                     Angular and React.
                   </div>
                 </div>
-                <div className="photo flex items-center ml-32">
+                <div className="photo flex items-center mr-8">
                   <div className="sunny mt-20">
                     <div className="sunny-wrapper rounded-lg px-1 py-1"></div>
                     <img className="rounded-lg sunny-img" src={sunny}></img>
@@ -62,6 +62,11 @@ const LandingPage = () => {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="projects flex items-center justify-center">
+        <div className="project-div border border-red-500">
+          <div className="project-content border border-red-500"></div>
         </div>
       </div>
       {/* <div className="about-div flex items-center justify-center">
