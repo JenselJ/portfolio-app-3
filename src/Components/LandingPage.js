@@ -1,5 +1,6 @@
 import "./LandingPage.css";
 import sunny from "../assets/sunny.JPG";
+import game from "../assets/game.png";
 
 const LandingPage = () => {
   return (
@@ -65,8 +66,27 @@ const LandingPage = () => {
         </div>
       </div>
       <div className="projects flex items-center justify-center">
-        <div className="project-div border border-red-500">
-          <div className="project-content border border-red-500"></div>
+        <div className="project-div">
+          <div className="project-content flex">
+            {/* <div className="project-libraries border border-red-500">code</div> */}
+            <div className="project-photos flex items-center">
+              <div className="game-wrapper rounded-xl"></div>
+              <img src={game} className="game-photo rounded-xl" />
+            </div>
+            <div className="project-text p-2">
+              <div className="text-gray3 font-sans font-semibold text-2xl w-full text-center">
+                Megaman VS Samus
+              </div>
+              <div className="text-gray4 text-center mt-3">
+                Megaman vs Samus is a simple turn-based combat game that I had a
+                lot of fun making. Users play as Megaman an choose between three
+                ability options to take down the AI opponent Samus. In this app
+                I used React hooks to compute the AI opponent choices, create
+                the batle sequence and configure narrator announcements.
+              </div>
+              <div>code</div>
+            </div>
+          </div>
         </div>
       </div>
       {/* <div className="about-div flex items-center justify-center">
