@@ -80,7 +80,7 @@
 }
 
 .app-div {
-  height: 200vh;
+  /* height: 300vh; */
   display: flex;
   flex-direction: column;
 }
@@ -188,6 +188,36 @@
 }
 
 .game-wrapper:hover {
+  transition: opacity 0.5s;
+  opacity: 0;
+}
+
+.job-wrapper {
+  height: 308px;
+  width: 470px;
+  background-color: #59ffd5;
+  position: absolute;
+  z-index: 11;
+  transition: opacity 0.5s;
+  opacity: 40%;
+}
+
+.job-wrapper:hover {
+  transition: opacity 0.5s;
+  opacity: 0;
+}
+
+.quiz-wrapper {
+  height: 351px;
+  width: 470px;
+  background-color: #59ffd5;
+  position: absolute;
+  z-index: 11;
+  transition: opacity 0.5s;
+  opacity: 40%;
+}
+
+.quiz-wrapper:hover {
   transition: opacity 0.5s;
   opacity: 0;
 }

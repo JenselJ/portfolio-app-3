@@ -1,6 +1,8 @@
 import "./LandingPage.css";
 import sunny from "../assets/sunny.JPG";
 import game from "../assets/game.png";
+import quiz from "../assets/quiz.png";
+import job from "../assets/job.png";
 
 const LandingPage = () => {
   return (
@@ -141,6 +143,181 @@ const LandingPage = () => {
           <div className="text-aqua">photo</div>
         </div>
       </div> */}
+      <div className="flex mt-32 items-center justify-center">
+        <div className="project-div flex items-center justify-center">
+          <div className="">
+            <div className="w-full flex justify-center items-center mb-10">
+              <div className="text-aqua font-mono text-2xl">
+                Featured Project -{" "}
+                <a className="text-gray3 font-sans font-semibold text-2xl">
+                  JobWorm
+                </a>
+              </div>
+              {/* <div className="text-gray3 font-sans font-semibold text-2xl">
+                Megaman VS Samus
+              </div> */}
+            </div>
+
+            <div className="project-content flex mb-10 items-center">
+              {/* <div className="project-libraries border border-red-500">code</div> */}
+              <div className="project-photos flex items-center px-10">
+                <div className="job-wrapper rounded-xl"></div>
+                <img src={job} className="job-photo rounded-xl" />
+              </div>
+              <div className="project-text pr-10 flex items-center font-sans">
+                <div>
+                  <div className="text-gray4 text-center">
+                    <a className="text-aqua">JobWorm</a> is a simple job board
+                    that allows users interact with each other by posting,
+                    viewing and commenting on job offers. Upon signing in, users
+                    are taken to a home page where they can view and comment of
+                    job offers created by fellow users. They can also post and
+                    delete their own job listing with a couple button clicks.
+                  </div>
+                  <div className="text-gray4 text-center mt-3">
+                    For this app, I built the back-end myself by making a
+                    RESTful API with Node.js and Express. This gave me a better
+                    understanding of how the front-end and back-end interact
+                    with one another. Like with my quiz app, Firebase was used
+                    for user-authentication and tailwind was used for styling.
+                  </div>
+                  {/* <div className="text-gray4 text-center mt-3">
+                    You can use the user details below to browse my app or feel
+                    free to create your own account. User:
+                    james.clarke@gmail.com Password: james123{" "}
+                  </div> */}
+                </div>
+              </div>
+            </div>
+            <div className="project-code flex justify-center">
+              <div className="w-1/2 flex justify-between text-aqua font-mono">
+                <div>React</div>
+                <div>REST API</div>
+                <div>Firebase</div>
+                <div>Tailwind</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex mt-32 items-center justify-center">
+        <div className="project-div flex items-center justify-center">
+          <div className="">
+            <div className="w-full flex justify-center items-center mb-10">
+              <div className="text-aqua font-mono text-2xl">
+                Featured Project -{" "}
+                <a className="text-gray3 font-sans font-semibold text-2xl">
+                  The Quiz Club
+                </a>
+              </div>
+              {/* <div className="text-gray3 font-sans font-semibold text-2xl">
+                Megaman VS Samus
+              </div> */}
+            </div>
+
+            <div className="project-content flex mb-10 items-center">
+              {/* <div className="project-libraries border border-red-500">code</div> */}
+              <div className="project-photos flex items-center px-10">
+                <div className="quiz-wrapper rounded-xl"></div>
+                <img src={quiz} className="quiz-photo rounded-xl" />
+              </div>
+              <div className="project-text pr-10 flex items-center font-sans">
+                <div>
+                  <div className="text-gray4 text-center">
+                    <a className="text-aqua">The Quiz Club</a> is my attempt at
+                    an elevated version of the classic Javascript quiz. When
+                    users complete quizes, their results and data automatically
+                    saved on the back-end. This data is then presently cleanly
+                    on their Profile page so they can see their progress. React
+                    was used for the front-end with Tailwind for a modern and
+                    responsive website style. I used Firebase User
+                    Authentication and Realtime Database to create a userbase
+                    and store back-end data.
+                  </div>
+                  <div className="text-gray4 text-center mt-3">
+                    In making this website I learnt how to manipulate data
+                    arrays and objects with more advanced Javascript to present
+                    data in a clear and useful way for users. I also learnt how
+                    to use Firebase to create a secure back-end and how to
+                    connect this to the front-end with HTTP Requests.
+                  </div>
+                  {/* <div className="text-gray4 text-center mt-3">
+                    You can use the user details below to browse my app or feel
+                    free to create your own account. User:
+                    james.clarke@gmail.com Password: james123{" "}
+                  </div> */}
+                </div>
+              </div>
+            </div>
+            <div className="project-code flex justify-center">
+              <div className="w-1/3 flex justify-between text-aqua font-mono">
+                <div>React</div>
+                <div>Firebase</div>
+                <div>Tailwind</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex mt-32 items-center justify-center pb-20">
+        <div className="project-div flex items-center justify-center">
+          <div className="">
+            <div className="w-full flex justify-center items-center mb-10">
+              <div className="text-aqua font-mono text-2xl">
+                Featured Project -{" "}
+                <a className="text-gray3 font-sans font-semibold text-2xl">
+                  JobWorm
+                </a>
+              </div>
+              {/* <div className="text-gray3 font-sans font-semibold text-2xl">
+                Megaman VS Samus
+              </div> */}
+            </div>
+
+            <div className="project-content flex mb-10 items-center">
+              {/* <div className="project-libraries border border-red-500">code</div> */}
+              <div className="project-photos flex items-center px-10">
+                <div className="job-wrapper rounded-xl"></div>
+                <img src={job} className="job-photo rounded-xl" />
+              </div>
+              <div className="project-text pr-10 flex items-center font-sans">
+                <div>
+                  <div className="text-gray4 text-center">
+                    <a className="text-aqua">JobWorm</a> is a simple job board
+                    that allows users interact with each other by posting,
+                    viewing and commenting on job offers. Upon signing in, users
+                    are taken to a home page where they can view and comment of
+                    job offers created by fellow users. They can also post and
+                    delete their own job listing with a couple button clicks.
+                  </div>
+                  <div className="text-gray4 text-center mt-3">
+                    For this app, I built the back-end myself by making a
+                    RESTful API with Node.js and Express. This gave me a better
+                    understanding of how the front-end and back-end interact
+                    with one another. Like with my quiz app, Firebase was used
+                    for user-authentication and tailwind was used for styling.
+                  </div>
+                  {/* <div className="text-gray4 text-center mt-3">
+                    You can use the user details below to browse my app or feel
+                    free to create your own account. User:
+                    james.clarke@gmail.com Password: james123{" "}
+                  </div> */}
+                </div>
+              </div>
+            </div>
+            <div className="project-code flex justify-center">
+              <div className="w-1/2 flex justify-between text-aqua font-mono">
+                <div>React</div>
+                <div>REST API</div>
+                <div>Firebase</div>
+                <div>Tailwind</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
