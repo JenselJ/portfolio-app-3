@@ -65,19 +65,30 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
+      <div className="about-title flex items-center">
+        <div className="text-gray2 font-sans text-2xl">
+          <a className="text-aqua font-mono">02.</a>
+          <a className="font-bold"> Some things I've built</a>
+        </div>
+        <div></div>
+        <div className="line"></div>
+      </div>
       <div className="projects flex items-center justify-center">
-        <div className="project-div flex items-center">
-          <div>
-            <div className="flex">
-              <div className="ml-20 text-aqua font-mono text-2xl">
-                Featured Project
+        <div className="project-div flex items-center justify-center">
+          <div className="">
+            <div className="w-full flex justify-center items-center mb-10">
+              <div className="text-aqua font-mono text-2xl">
+                Featured Project -{" "}
+                <a className="text-gray3 font-sans font-semibold text-2xl">
+                  Megaman VS Samus
+                </a>
               </div>
-              <div className="text-gray3 font-sans font-semibold text-2xl">
+              {/* <div className="text-gray3 font-sans font-semibold text-2xl">
                 Megaman VS Samus
-              </div>
+              </div> */}
             </div>
 
-            <div className="project-content flex">
+            <div className="project-content flex mb-10 items-center">
               {/* <div className="project-libraries border border-red-500">code</div> */}
               <div className="project-photos flex items-center px-10">
                 <div className="game-wrapper rounded-xl"></div>
@@ -85,13 +96,13 @@ const LandingPage = () => {
               </div>
               <div className="project-text pr-10 flex items-center font-sans">
                 <div>
-                  <div className="text-gray4 text-center mt-3">
-                    Megaman vs Samus is a simple turn-based combat game that I
-                    had a lot of fun making. Users play as Megaman an choose
-                    between three ability options to take down the AI opponent
-                    Samus. In this app I used React hooks to compute the AI
-                    opponent choices, create the batle sequence and configure
-                    narrator announcements.
+                  <div className="text-gray4 text-center">
+                    <a className="text-aqua">Megaman vs Samus</a> is a simple
+                    turn-based combat game that I had a lot of fun making. Users
+                    play as Megaman an choose between three ability options to
+                    take down the AI opponent Samus. In this app I used React
+                    hooks to compute the AI opponent choices, create the batle
+                    sequence and configure narrator announcements.
                   </div>
                   <div className="text-gray4 text-center mt-3">
                     The styling is done with pure CSS and some basic CSS
@@ -100,13 +111,13 @@ const LandingPage = () => {
                     IIFE (immediately invoked function expression).
                   </div>
                   <div className="text-gray4 text-center mt-3">
-                    No login is needed for this app. Good luck defeating Samus!
+                    No login is needed for this app. Good luck defeating Samus!{" "}
                   </div>
                 </div>
               </div>
             </div>
             <div className="project-code flex justify-center">
-              <div className="w-1/3 flex justify-between text-gray3 font-sans">
+              <div className="w-1/3 flex justify-between text-aqua font-mono">
                 <div>React</div>
                 <div>CSS</div>
                 <div>JavaScript</div>
