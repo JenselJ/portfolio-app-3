@@ -3,6 +3,7 @@ import sunny from "../assets/sunny.JPG";
 import game from "../assets/game.png";
 import quiz from "../assets/quiz.png";
 import job from "../assets/job.png";
+import css from "../assets/css.png";
 
 const LandingPage = () => {
   return (
@@ -76,8 +77,8 @@ const LandingPage = () => {
         <div className="line"></div>
       </div>
       <div className="projects flex items-center justify-center">
-        <div className="project-div flex items-center justify-center">
-          <div className="">
+        <div className="project-div flex py-10 justify-center">
+          <div className="pb-0 mb-0">
             <div className="w-full flex justify-center items-center mb-10">
               <div className="text-aqua font-mono text-2xl">
                 Featured Project -{" "}
@@ -144,7 +145,7 @@ const LandingPage = () => {
         </div>
       </div> */}
       <div className="flex mt-32 items-center justify-center">
-        <div className="project-div flex items-center justify-center">
+        <div className="project-div flex py-10 justify-center">
           <div className="">
             <div className="w-full flex justify-center items-center mb-10">
               <div className="text-aqua font-mono text-2xl">
@@ -202,7 +203,7 @@ const LandingPage = () => {
       </div>
 
       <div className="flex mt-32 items-center justify-center">
-        <div className="project-div flex items-center justify-center">
+        <div className="project-div flex py-10 justify-center">
           <div className="">
             <div className="w-full flex justify-center items-center mb-10">
               <div className="text-aqua font-mono text-2xl">
@@ -262,13 +263,13 @@ const LandingPage = () => {
       </div>
 
       <div className="flex mt-32 items-center justify-center pb-20">
-        <div className="project-div flex items-center justify-center">
+        <div className="project-div flex py-10 justify-center">
           <div className="">
             <div className="w-full flex justify-center items-center mb-10">
               <div className="text-aqua font-mono text-2xl">
                 Featured Project -{" "}
                 <a className="text-gray3 font-sans font-semibold text-2xl">
-                  JobWorm
+                  Todoist Clone
                 </a>
               </div>
               {/* <div className="text-gray3 font-sans font-semibold text-2xl">
@@ -279,40 +280,33 @@ const LandingPage = () => {
             <div className="project-content flex mb-10 items-center">
               {/* <div className="project-libraries border border-red-500">code</div> */}
               <div className="project-photos flex items-center px-10">
-                <div className="job-wrapper rounded-xl"></div>
-                <img src={job} className="job-photo rounded-xl" />
+                <div className="css-wrapper rounded-xl"></div>
+                <img src={css} className="css-photo rounded-xl" />
               </div>
               <div className="project-text pr-10 flex items-center font-sans">
                 <div>
                   <div className="text-gray4 text-center">
-                    <a className="text-aqua">JobWorm</a> is a simple job board
-                    that allows users interact with each other by posting,
-                    viewing and commenting on job offers. Upon signing in, users
-                    are taken to a home page where they can view and comment of
-                    job offers created by fellow users. They can also post and
-                    delete their own job listing with a couple button clicks.
+                    My <a className="text-aqua">Todoist Clone</a> is a copy of
+                    the Todoist app made purely from HTML, CSS and Boostrap.
+                    This project was aimed to challenge my understanding of raw
+                    CSS and apply the Bootstrap grid structure.
                   </div>
                   <div className="text-gray4 text-center mt-3">
-                    For this app, I built the back-end myself by making a
-                    RESTful API with Node.js and Express. This gave me a better
-                    understanding of how the front-end and back-end interact
-                    with one another. Like with my quiz app, Firebase was used
-                    for user-authentication and tailwind was used for styling.
+                    I had to pay careful attention to small details in order to
+                    create this app and learnt how to use media queries for
+                    responsiveness.
                   </div>
-                  {/* <div className="text-gray4 text-center mt-3">
-                    You can use the user details below to browse my app or feel
-                    free to create your own account. User:
-                    james.clarke@gmail.com Password: james123{" "}
-                  </div> */}
+                  <div className="text-gray4 text-center mt-3">
+                    No login is needed to browse this app. Enjoy!
+                  </div>
                 </div>
               </div>
             </div>
             <div className="project-code flex justify-center">
-              <div className="w-1/2 flex justify-between text-aqua font-mono">
-                <div>React</div>
-                <div>REST API</div>
-                <div>Firebase</div>
-                <div>Tailwind</div>
+              <div className="w-1/3 flex justify-between text-aqua font-mono">
+                <div>HTML</div>
+                <div>CSS</div>
+                <div>Bootstrap</div>
               </div>
             </div>
           </div>

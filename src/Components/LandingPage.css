@@ -146,7 +146,7 @@
 }
 
 .project-div {
-  height: 600px;
+  /* height: 600px; */
   width: 1000px;
   background-color: #112240;
   box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
@@ -218,6 +218,21 @@
 }
 
 .quiz-wrapper:hover {
+  transition: opacity 0.5s;
+  opacity: 0;
+}
+
+.css-wrapper {
+  height: 293px;
+  width: 470px;
+  background-color: #59ffd5;
+  position: absolute;
+  z-index: 11;
+  transition: opacity 0.5s;
+  opacity: 40%;
+}
+
+.css-wrapper:hover {
   transition: opacity 0.5s;
   opacity: 0;
 }
