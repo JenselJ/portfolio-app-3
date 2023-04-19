@@ -285,5 +285,23 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  position: sticky;
+}
+
+.socials-div {
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  letter-spacing: 0.1em;
+}
+
+.git {
+  fill: #a8b2d1;
+}
+
+.link {
+  fill: #a8b2d1;
+}
+
+.foot {
+  position: relative;
+  bottom: 5px;
 }
