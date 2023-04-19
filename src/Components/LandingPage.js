@@ -19,16 +19,16 @@ const LandingPage = () => {
               <div className="text-gray">Logo</div>
               <div className="text-gray3 flex items-center">
                 <div className="mr-8">
-                  <a className="text-aqua">1.</a> Home
+                  <a className="text-aqua">01.</a> Home
                 </div>
                 {/* <div className="mr-8">
                   <a className="text-aqua">2.</a> About
                 </div> */}
                 <div className="mr-8">
-                  <a className="text-aqua">2.</a> Projects
+                  <a className="text-aqua">02.</a> Projects
                 </div>
                 <div className="mr-8">
-                  <a className="text-aqua">3.</a> Contact
+                  <a className="text-aqua">03.</a> Contact
                 </div>
                 <div className="border border-aqua text-aqua rounded-md px-3 py-2">
                   Resume
@@ -113,9 +113,9 @@ const LandingPage = () => {
                     Javascript syntax to build the battle sequence, such as an
                     IIFE (immediately invoked function expression).
                   </div>
-                  <div className="text-gray4 text-center mt-3">
+                  {/* <div className="text-gray4 text-center mt-3">
                     No login is needed for this app. Good luck defeating Samus!{" "}
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -262,7 +262,7 @@ const LandingPage = () => {
         </div>
       </div>
 
-      <div className="flex mt-32 items-center justify-center pb-20">
+      <div className="flex mt-32 items-center justify-center pb-5">
         <div className="project-div flex py-10 justify-center">
           <div className="">
             <div className="w-full flex justify-center items-center mb-10">
@@ -309,6 +309,24 @@ const LandingPage = () => {
                 <div>Bootstrap</div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="contact-page flex items-center justify-center">
+        <div className="contact-main text-center">
+          <div className="text-aqua font-mono mb-4">03. What's Next?</div>
+          <div className="text-gray3 font-sans font-bold text-5xl mb-5">
+            Get In Touch
+          </div>
+          <div className="text-gray font-sans">
+            I'm always open to new opportunities, or even just a friendly
+            conversation. If you'd like to contact me, please click below and
+            I'll do my best to get back to you!
+          </div>
+          <div className="w-full flex justify-center mt-10">
+            <div className="border border-aqua text-aqua font-mono text-sm rounded-md px-6 py-4">
+              Say Hello
+            </div>{" "}
           </div>
         </div>
       </div>

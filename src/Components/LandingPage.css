@@ -258,3 +258,12 @@
   width: 1000px;
   height: 600px;
 }
+
+.contact-page {
+  height: 100vh;
+}
+
+.contact-main {
+  height: 300px;
+  width: 550px;
+}
