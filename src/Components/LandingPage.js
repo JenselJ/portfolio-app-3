@@ -312,7 +312,8 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-      <div className="contact-page flex items-center justify-center">
+      <div className="contact-page flex items-center justify-between">
+        <div>a</div>{" "}
         <div className="contact-main text-center">
           <div className="text-aqua font-mono mb-4">03. What's Next?</div>
           <div className="text-gray3 font-sans font-bold text-5xl mb-5">
@@ -329,7 +330,14 @@ const LandingPage = () => {
             </div>{" "}
           </div>
         </div>
+        <div className="email-wrapper items-end justify-end mr-10">
+          <div className="email-div text-gray4 font-mono text-xs mb-5">
+            saneer.work@gmail.com
+          </div>
+          <div className="line vertical"></div>
+        </div>
       </div>
+      <div className="h-screen"></div>
     </div>
   );
 };
