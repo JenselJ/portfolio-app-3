@@ -4,8 +4,35 @@ import game from "../assets/game.png";
 import quiz from "../assets/quiz.png";
 import job from "../assets/job.png";
 import css from "../assets/css.png";
+import { useRef } from "react";
 
 const LandingPage = () => {
+  const projects = useRef(null);
+  const contact = useRef(null);
+
+  const handleProjectScroll = () => {
+    projects.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handleContactScroll = () => {
+    contact.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const onResumeClick = () => {
+    // using Java Script method to get PDF file
+    fetch("Sunny_Samanta_Resume.pdf").then((response) => {
+      response.blob().then((blob) => {
+        // Creating new object of PDF file
+        const fileURL = window.URL.createObjectURL(blob);
+        // Setting various property values
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = "Sunny_Samanta_Resume.pdf";
+        alink.click();
+      });
+    });
+  };
+
   return (
     <>
       <div className="app-div">
@@ -19,19 +46,28 @@ const LandingPage = () => {
               <div className="nav-div h-12 flex justify-between px-4 items-center font-mono">
                 <div className="text-gray">Logo</div>
                 <div className="text-gray3 flex items-center">
-                  <div className="mr-8">
-                    <a className="text-aqua">01.</a> Home
+                  <div className="mr-8 hover:cursor-pointer hover:text-aqua">
+                    <a className="text-aqua ">01.</a> Home
                   </div>
                   {/* <div className="mr-8">
                   <a className="text-aqua">2.</a> About
                 </div> */}
-                  <div className="mr-8">
+                  <div
+                    className="mr-8 hover:cursor-pointer hover:text-aqua"
+                    onClick={handleProjectScroll}
+                  >
                     <a className="text-aqua">02.</a> Projects
                   </div>
-                  <div className="mr-8">
+                  <div
+                    className="mr-8 hover:cursor-pointer hover:text-aqua"
+                    onClick={handleContactScroll}
+                  >
                     <a className="text-aqua">03.</a> Contact
                   </div>
-                  <div className="border border-aqua text-aqua rounded-md px-3 py-2">
+                  <div
+                    className="border border-aqua text-aqua rounded-md px-3 py-2 "
+                    onClick={onResumeClick}
+                  >
                     Resume
                   </div>
                 </div>
@@ -69,7 +105,7 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
-        <div className="about-title flex items-center">
+        <div className="about-title flex items-center pt-10" ref={projects}>
           <div className="text-gray2 font-sans text-2xl">
             <a className="text-aqua font-mono">02.</a>
             <a className="font-bold"> Some things I've built</a>
@@ -340,7 +376,9 @@ const LandingPage = () => {
           </div>{" "}
           <div className="flex items-center contact-wrapper">
             <div className="contact-main text-center">
-              <div className="text-aqua font-mono mb-4">03. What's Next?</div>
+              <div className="text-aqua font-mono mb-4" ref={contact}>
+                03. What's Next?
+              </div>
               <div className="text-gray3 font-sans font-bold text-5xl mb-5">
                 Get In Touch
               </div>
