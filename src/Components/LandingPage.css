@@ -32,6 +32,18 @@
   border-bottom-right-radius: 15px;
 }
 
+.resume:hover {
+  background-color: rgba(100, 255, 218, 0.1);
+  outline: none;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.resume {
+  background-color: none;
+  transition: all 0.5s;
+}
+
 .main-div {
   position: absolute;
   left: 0;
@@ -57,7 +69,10 @@
 
 .main-content-grandchild {
   height: 400px;
-  width: 800px;
+  width: 65%;
+  max-width: 800px;
+  margin-left: 5%;
+  margin-bottom: 3%;
 }
 
 .welcome {
@@ -66,7 +81,8 @@
 
 .photo {
   height: 100%;
-  width: 450px;
+  width: 35%;
+  margin-bottom: 3%;
 }
 
 .about-title {

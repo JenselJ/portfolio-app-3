@@ -65,7 +65,7 @@ const LandingPage = () => {
                     <a className="text-aqua">03.</a> Contact
                   </div>
                   <div
-                    className="border border-aqua text-aqua rounded-md px-3 py-2 "
+                    className="border border-aqua2 resume text-aqua2 rounded-md px-3 py-2 "
                     onClick={onResumeClick}
                   >
                     Resume
@@ -74,26 +74,28 @@ const LandingPage = () => {
               </div>
               <div className="main-content pb-12">
                 <div className="main-content-child flex items-center justify-between">
-                  <div className="ml-32 main-content-grandchild font-sans text-gray mb-20">
-                    <div className="welcome text-gray2 font-semibold">
-                      Welcome.
-                    </div>
-                    <div className="text-4xl text-gray font-semibold">
-                      I'm Sunny and I build things for the web.
-                    </div>
-                    <div className="mt-8 text-lg">
-                      I'm a junior web developer working part-time at{" "}
-                      <a className="text-aqua">SurryHQ.</a> My goal right now is
-                      to transition into a full-time role where I can grow my
-                      skillset and break deeper into the industry.
-                    </div>
-                    <div className="mt-4 text-lg">
-                      I'm comfortable working full-stack but my strength lies in
-                      front-end (JavaScript) where I have commercial experience
-                      in Angular and React.
+                  <div className="main-content-grandchild flex font-sans text-gray">
+                    <div className="welcome-wrapper">
+                      <div className="welcome text-gray2 font-semibold">
+                        Welcome.
+                      </div>
+                      <div className="text-4xl text-gray font-semibold">
+                        I'm Sunny and I build things for the web.
+                      </div>
+                      <div className="mt-8 text-lg">
+                        I'm a junior web developer working part-time at{" "}
+                        <a className="text-aqua">SurryHQ.</a> My goal right now
+                        is to transition into a full-time role where I can grow
+                        my skillset and break deeper into the industry.
+                      </div>
+                      <div className="mt-4 text-lg">
+                        I'm comfortable working full-stack but my strength lies
+                        in front-end (JavaScript) where I have commercial
+                        experience in Angular and React.
+                      </div>
                     </div>
                   </div>
-                  <div className="photo flex items-center mr-8">
+                  <div className="photo flex items-center justify-center">
                     <div className="sunny mt-20">
                       <div className="sunny-wrapper rounded-lg px-1 py-1"></div>
                       <img className="rounded-lg sunny-img" src={sunny}></img>
