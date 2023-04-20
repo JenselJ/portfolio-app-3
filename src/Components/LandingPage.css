@@ -301,7 +301,14 @@
   fill: #a8b2d1;
 }
 
-.foot {
+.contact-wrapper {
+  height: 100%;
+}
+
+.footer {
   position: relative;
-  bottom: 5px;
+  bottom: 0;
+  height: 0px;
+  letter-spacing: 0.1em;
+  transform: translateY(-40px);
 }
