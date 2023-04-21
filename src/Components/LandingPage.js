@@ -101,16 +101,16 @@ const LandingPage = () => {
                       <div className="welcome text-gray2 font-semibold">
                         Welcome.
                       </div>
-                      <div className="text-4xl text-gray font-semibold">
+                      <div className="text-4xl text-gray font-semibold welcome-text-1">
                         I'm Sunny and I build things for the web.
                       </div>
-                      <div className="mt-8 text-lg">
+                      <div className="mt-8 text-lg welcome-text-2">
                         I'm a junior web developer working part-time at{" "}
                         <a className="text-aqua2 link">SurryHQ.</a> My goal
                         right now is to transition into a full-time role where I
                         can grow my skillset and break deeper into the industry.
                       </div>
-                      <div className="mt-4 text-lg">
+                      <div className="mt-4 text-lg welcome-text-3">
                         I'm comfortable working full-stack but my strength lies
                         in front-end (JavaScript) where I have commercial
                         experience in Angular and React.
