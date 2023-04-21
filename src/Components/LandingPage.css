@@ -291,6 +291,14 @@
   writing-mode: vertical-rl;
   text-orientation: mixed;
   letter-spacing: 0.1em;
+  transition: all 0.3s;
+}
+
+.email-div:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+  color: #59ffd5;
+  transition: all 0.3s;
 }
 
 .vertical {
@@ -346,4 +354,27 @@
   --p: 0%;
   transition: cubic-bezier(0, 0, 0, 0) 0s, background-size 0.3s 0.3s;
   transition-delay: 50ms;
+}
+
+.hello {
+  transition: all 0.3s;
+}
+
+.hello:hover {
+  outline: none;
+  cursor: pointer;
+  box-shadow: 4px 4px 0 0 #64ffda;
+  transform: translate(-5px, -5px);
+  transition: all 0.3s;
+}
+
+.github {
+  transition: all 0.3s;
+}
+
+.github:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+  fill: #59ffd5;
+  transition: all 0.3s;
 }
