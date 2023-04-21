@@ -360,6 +360,73 @@
   transition: all 0.3s;
 }
 
+.home {
+  animation: home 0.5s ease-out;
+}
+
+@keyframes home {
+  0% {
+    transform: translateY(-200%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.project-nav {
+  animation: home 0.5s ease-out;
+  animation-delay: 0.2s;
+}
+
+@keyframes project-nav {
+  0% {
+    transform: translateY(-200%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.contact-nav {
+  animation: home 0.5s ease-out;
+  animation-delay: 0.4s;
+}
+
+@keyframes contact-nav {
+  0% {
+    transform: translateY(-200%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.resume {
+  animation: home 0.5s ease-out;
+  animation-delay: 0.6s;
+}
+
+@keyframes resume {
+  0% {
+    transform: translateY(-200%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-100%);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
 .hello:hover {
   outline: none;
   cursor: pointer;

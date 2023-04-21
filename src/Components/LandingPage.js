@@ -45,14 +45,15 @@ const LandingPage = () => {
             <div className="main-div-child">
               <div className="nav-div h-12 flex justify-between px-4 items-center font-mono">
                 <div className="text-gray">
-                  <svg
-                    fill="#000000"
+                  {/* <svg
+                    fill="#000"
+                    className="hex"
                     version="1.1"
                     id="Capa_1"
                     xmlns="http://www.w3.org/2000/svg"
                     // xmlns:xlink="http://www.w3.org/1999/xlink"
-                    width="20px"
-                    height="20px"
+                    width="40px"
+                    height="40px"
                     viewBox="0 0 485.688 485.688"
                     // xml:space="preserve"
                   >
@@ -64,23 +65,23 @@ const LandingPage = () => {
                         />
                       </g>
                     </g>
-                  </svg>
+                  </svg> */}
                 </div>
                 <div className="text-gray3 flex items-center">
-                  <div className="mr-8 hover:cursor-pointer hover:text-aqua">
+                  <div className="mr-8 hover:cursor-pointer hover:text-aqua home">
                     <a className="text-aqua ">01.</a> Home
                   </div>
                   {/* <div className="mr-8">
                   <a className="text-aqua">2.</a> About
                 </div> */}
                   <div
-                    className="mr-8 hover:cursor-pointer hover:text-aqua"
+                    className="mr-8 hover:cursor-pointer hover:text-aqua project-nav"
                     onClick={handleProjectScroll}
                   >
                     <a className="text-aqua">02.</a> Projects
                   </div>
                   <div
-                    className="mr-8 hover:cursor-pointer hover:text-aqua"
+                    className="mr-8 hover:cursor-pointer hover:text-aqua contact-nav"
                     onClick={handleContactScroll}
                   >
                     <a className="text-aqua">03.</a> Contact
