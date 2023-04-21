@@ -84,9 +84,9 @@ const LandingPage = () => {
                       </div>
                       <div className="mt-8 text-lg">
                         I'm a junior web developer working part-time at{" "}
-                        <a className="text-aqua">SurryHQ.</a> My goal right now
-                        is to transition into a full-time role where I can grow
-                        my skillset and break deeper into the industry.
+                        <a className="text-aqua2 link">SurryHQ.</a> My goal
+                        right now is to transition into a full-time role where I
+                        can grow my skillset and break deeper into the industry.
                       </div>
                       <div className="mt-4 text-lg">
                         I'm comfortable working full-stack but my strength lies
@@ -121,7 +121,11 @@ const LandingPage = () => {
               <div className="w-full flex justify-center items-center mb-10">
                 <div className="text-aqua font-mono text-2xl">
                   Featured Project -{" "}
-                  <a className="text-gray3 font-sans font-semibold text-2xl hover:cursor-pointer hover:text-aqua2">
+                  <a
+                    className="text-gray3 font-sans font-semibold text-2xl link hover:cursor-pointer hover:text-aqua2"
+                    href="https://game-app-e3cd9.web.app/"
+                    target="_blank"
+                  >
                     Megaman VS Samus
                   </a>
                 </div>
@@ -133,14 +137,24 @@ const LandingPage = () => {
               <div className="project-content flex mb-10 items-center">
                 {/* <div className="project-libraries border border-red-500">code</div> */}
                 <div className="project-photos flex items-center px-10">
-                  <div className="game-wrapper rounded-xl"></div>
+                  <a
+                    href="https://game-app-e3cd9.web.app/"
+                    target="_blank"
+                    className="game-wrapper rounded-xl"
+                  ></a>
                   <img src={game} className="game-photo rounded-xl" />
                 </div>
                 <div className="project-text pr-10 flex items-center font-sans">
                   <div>
                     <div className="text-gray4 text-center">
-                      <a className="text-aqua2 link">Megaman vs Samus</a> is a
-                      simple turn-based combat game that I had a lot of fun
+                      <a
+                        className="text-aqua2 link"
+                        href="https://game-app-e3cd9.web.app/"
+                        target="_blank"
+                      >
+                        Megaman vs Samus
+                      </a>{" "}
+                      is a simple turn-based combat game that I had a lot of fun
                       making. Users play as Megaman an choose between three
                       ability options to take down the AI opponent Samus. In
                       this app I used React hooks to compute the AI opponent
@@ -190,7 +204,7 @@ const LandingPage = () => {
               <div className="w-full flex justify-center items-center mb-10">
                 <div className="text-aqua font-mono text-2xl">
                   Featured Project -{" "}
-                  <a className="text-gray3 font-sans font-semibold text-2xl">
+                  <a className="text-gray3 font-sans font-semibold text-2xl link hover:text-aqua2">
                     JobWorm
                   </a>
                 </div>
@@ -202,19 +216,23 @@ const LandingPage = () => {
               <div className="project-content flex mb-10 items-center">
                 {/* <div className="project-libraries border border-red-500">code</div> */}
                 <div className="project-photos flex items-center px-10">
-                  <div className="job-wrapper rounded-xl"></div>
+                  <a
+                    href="https://job-app-two.web.app/"
+                    target="_blank"
+                    className="job-wrapper rounded-xl"
+                  ></a>
                   <img src={job} className="job-photo rounded-xl" />
                 </div>
                 <div className="project-text pr-10 flex items-center font-sans">
                   <div>
                     <div className="text-gray4 text-center">
-                      <a className="text-aqua">JobWorm</a> is a simple job board
-                      that allows users interact with each other by posting,
-                      viewing and commenting on job offers. Upon signing in,
-                      users are taken to a home page where they can view and
-                      comment of job offers created by fellow users. They can
-                      also post and delete their own job listing with a couple
-                      button clicks.
+                      <a className="text-aqua2 link">JobWorm</a> is a simple job
+                      board that allows users interact with each other by
+                      posting, viewing and commenting on job offers. Upon
+                      signing in, users are taken to a home page where they can
+                      view and comment of job offers created by fellow users.
+                      They can also post and delete their own job listing with a
+                      couple button clicks.
                     </div>
                     <div className="text-gray4 text-center mt-3">
                       For this app, I built the back-end myself by making a
@@ -250,7 +268,7 @@ const LandingPage = () => {
               <div className="w-full flex justify-center items-center mb-10">
                 <div className="text-aqua font-mono text-2xl">
                   Featured Project -{" "}
-                  <a className="text-gray3 font-sans font-semibold text-2xl">
+                  <a className="text-gray3 font-sans font-semibold text-2xl hover:text-aqua2 link">
                     The Quiz Club
                   </a>
                 </div>
@@ -268,9 +286,9 @@ const LandingPage = () => {
                 <div className="project-text pr-10 flex items-center font-sans">
                   <div>
                     <div className="text-gray4 text-center">
-                      <a className="text-aqua">The Quiz Club</a> is my attempt
-                      at an elevated version of the classic Javascript quiz.
-                      When users complete quizes, their results and data
+                      <a className="text-aqua2 link">The Quiz Club</a> is my
+                      attempt at an elevated version of the classic Javascript
+                      quiz. When users complete quizes, their results and data
                       automatically saved on the back-end. This data is then
                       presently cleanly on their Profile page so they can see
                       their progress. React was used for the front-end with
@@ -310,7 +328,7 @@ const LandingPage = () => {
               <div className="w-full flex justify-center items-center mb-10">
                 <div className="text-aqua font-mono text-2xl">
                   Featured Project -{" "}
-                  <a className="text-gray3 font-sans font-semibold text-2xl">
+                  <a className="text-gray3 font-sans font-semibold text-2xl hover:text-aqua2 link">
                     Todoist Clone
                   </a>
                 </div>
@@ -328,10 +346,11 @@ const LandingPage = () => {
                 <div className="project-text pr-10 flex items-center font-sans">
                   <div>
                     <div className="text-gray4 text-center">
-                      My <a className="text-aqua">Todoist Clone</a> is a copy of
-                      the Todoist app made purely from HTML, CSS and Boostrap.
-                      This project was aimed to challenge my understanding of
-                      raw CSS and apply the Bootstrap grid structure.
+                      My <a className="text-aqua2 link">Todoist Clone</a> is a
+                      copy of the Todoist app made purely from HTML, CSS and
+                      Boostrap. This project was aimed to challenge my
+                      understanding of raw CSS and apply the Bootstrap grid
+                      structure.
                     </div>
                     <div className="text-gray4 text-center mt-3">
                       I had to pay careful attention to small details in order

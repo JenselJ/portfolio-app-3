@@ -7,6 +7,10 @@
   transform: translateY(-50%);
 }
 
+.nav-div {
+  z-index: 20;
+}
+
 .triangle-parent {
   height: 100%;
   width: 100%;
@@ -80,7 +84,6 @@
 }
 
 .photo {
-  height: 100%;
   width: 35%;
   margin-bottom: 3%;
 }
@@ -341,5 +344,6 @@
   cursor: pointer;
   --d: 51%;
   --p: 0%;
-  transition: cubic-bezier(0, 500, 1, 500) 0.5s, background-size 0.5s 0.5s;
+  transition: cubic-bezier(0, 0, 0, 0) 0s, background-size 0.3s 0.3s;
+  transition-delay: 50ms;
 }
