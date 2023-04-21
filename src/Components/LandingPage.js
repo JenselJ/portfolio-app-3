@@ -121,7 +121,7 @@ const LandingPage = () => {
               <div className="w-full flex justify-center items-center mb-10">
                 <div className="text-aqua font-mono text-2xl">
                   Featured Project -{" "}
-                  <a className="text-gray3 font-sans font-semibold text-2xl">
+                  <a className="text-gray3 font-sans font-semibold text-2xl hover:cursor-pointer hover:text-aqua2">
                     Megaman VS Samus
                   </a>
                 </div>
@@ -139,12 +139,12 @@ const LandingPage = () => {
                 <div className="project-text pr-10 flex items-center font-sans">
                   <div>
                     <div className="text-gray4 text-center">
-                      <a className="text-aqua">Megaman vs Samus</a> is a simple
-                      turn-based combat game that I had a lot of fun making.
-                      Users play as Megaman an choose between three ability
-                      options to take down the AI opponent Samus. In this app I
-                      used React hooks to compute the AI opponent choices,
-                      create the batle sequence and configure narrator
+                      <a className="text-aqua2 link">Megaman vs Samus</a> is a
+                      simple turn-based combat game that I had a lot of fun
+                      making. Users play as Megaman an choose between three
+                      ability options to take down the AI opponent Samus. In
+                      this app I used React hooks to compute the AI opponent
+                      choices, create the batle sequence and configure narrator
                       announcements.
                     </div>
                     <div className="text-gray4 text-center mt-3">

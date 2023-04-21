@@ -328,3 +328,18 @@
   letter-spacing: 0.1em;
   transform: translateY(-40px);
 }
+
+.link {
+  background: linear-gradient(currentColor 0 0) left var(--p, 0%) bottom 0 /
+      var(--d, 0%) 3px no-repeat,
+    linear-gradient(currentColor 0 0) right var(--p, 0%) bottom 0 / var(--d, 0%)
+      3px no-repeat;
+  transition: 0.3s, background-position 0s 0.3s;
+}
+
+.link:hover {
+  cursor: pointer;
+  --d: 51%;
+  --p: 0%;
+  transition: cubic-bezier(0, 500, 1, 500) 0.5s, background-size 0.5s 0.5s;
+}
