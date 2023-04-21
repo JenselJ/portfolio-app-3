@@ -5,6 +5,7 @@ import quiz from "../assets/quiz.png";
 import job from "../assets/job.png";
 import css from "../assets/css.png";
 import { useRef } from "react";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const LandingPage = () => {
   const projects = useRef(null);
@@ -130,13 +131,17 @@ const LandingPage = () => {
           </div>
         </div>
         <div className="about-title flex items-center pt-10" ref={projects}>
-          <div className="text-gray2 font-sans text-2xl">
-            <a className="text-aqua font-mono">02.</a>
-            <a className="font-bold"> Some things I've built</a>
-          </div>
-          <div></div>
-          <div className="line"></div>
+          <ScrollAnimation animateIn="fadeInUp" animateOnce="true">
+            <div className="text-gray2 font-sans text-2xl">
+              <a className="text-aqua font-mono">02.</a>
+              <a className="font-bold"> Some things I've built</a>
+            </div>
+
+            <div></div>
+            <div className="line"></div>
+          </ScrollAnimation>
         </div>
+
         <div className="projects flex items-center justify-center">
           <div className="project-div flex py-10 justify-center">
             <div className="pb-0 mb-0">
