@@ -1,3 +1,7 @@
+.app-div {
+  height: 100%;
+}
+
 .base-div {
   height: calc(100vh - 80px);
   position: absolute;
@@ -12,6 +16,9 @@
 }
 
 .nav-wrapper {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
 }
 
 .nav-child {

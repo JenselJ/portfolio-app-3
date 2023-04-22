@@ -4,10 +4,11 @@ import game from "../assets/game.png";
 import quiz from "../assets/quiz.png";
 import job from "../assets/job.png";
 import css from "../assets/css.png";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 
 const LandingPage = () => {
+  const [id, setId] = useState(0);
   const projects = useRef(null);
   const contact = useRef(null);
 
@@ -36,7 +37,7 @@ const LandingPage = () => {
 
   return (
     <>
-      <div className="app-div">
+      <div className="app-div" key={id}>
         <div className="base-div p-4">
           <div className="triangle-parent">
             <div className="triangle-top-left"></div>
@@ -70,7 +71,12 @@ const LandingPage = () => {
                   </svg> */}
                   </div>
                   <div className="text-gray3 flex items-center">
-                    <div className="mr-8 hover:cursor-pointer hover:text-aqua home">
+                    <div
+                      className="mr-8 hover:cursor-pointer hover:text-aqua home"
+                      onClick={() => {
+                        setId(id + 1);
+                      }}
+                    >
                       <a className="text-aqua ">01.</a> Home
                     </div>
                     {/* <div className="mr-8">
