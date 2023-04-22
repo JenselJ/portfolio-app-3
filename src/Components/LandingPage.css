@@ -580,3 +580,31 @@
   fill: #59ffd5;
   transition: all 0.3s;
 }
+
+@media (min-width: 1536px) {
+  .welcome {
+    font-size: 130px;
+  }
+  .sunny {
+    height: 350px;
+    width: 350px;
+  }
+  .sunny-wrapper {
+    height: 350px;
+    width: 350px;
+  }
+  .sunny-img {
+    height: 350px;
+    width: 350px;
+  }
+  .sunny-outline {
+    height: 350px;
+    width: 350px;
+  }
+  .main-content-grandchild {
+    margin-left: 8%;
+  }
+  .photo {
+    margin-right: 5%;
+  }
+}

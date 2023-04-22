@@ -110,10 +110,10 @@ const LandingPage = () => {
                       <div className="welcome text-gray2 font-semibold">
                         Welcome.
                       </div>
-                      <div className="text-4xl text-gray font-semibold welcome-text-1">
+                      <div className="text-4xl 2xl:text-4xl text-gray font-semibold welcome-text-1">
                         I'm Sunny and I build things for the web.
                       </div>
-                      <div className="mt-8 text-lg welcome-text-2">
+                      <div className="mt-8 text-lg 2xl:text-lg welcome-text-2">
                         I'm a junior web developer working part-time at{" "}
                         <a className="text-aqua2 link">SurryHQ.</a> My goal
                         right now is to transition into a full-time role where I
