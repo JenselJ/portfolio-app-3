@@ -11,6 +11,13 @@
   z-index: 20;
 }
 
+.nav-wrapper {
+}
+
+.nav-child {
+  width: 100%;
+}
+
 .triangle-parent {
   height: 100%;
   width: 100%;

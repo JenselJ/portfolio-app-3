@@ -44,9 +44,10 @@ const LandingPage = () => {
           </div>
           <div className="main-div p-12">
             <div className="main-div-child">
-              <div className="nav-div h-12 flex justify-between px-4 items-center font-mono">
-                <div className="text-gray">
-                  {/* <svg
+              <div className="nav-wrapper">
+                <div className="nav-div h-12 flex justify-between px-4 items-center font-mono">
+                  <div className="text-gray">
+                    {/* <svg
                     fill="#000"
                     className="hex"
                     version="1.1"
@@ -67,31 +68,32 @@ const LandingPage = () => {
                       </g>
                     </g>
                   </svg> */}
-                </div>
-                <div className="text-gray3 flex items-center">
-                  <div className="mr-8 hover:cursor-pointer hover:text-aqua home">
-                    <a className="text-aqua ">01.</a> Home
                   </div>
-                  {/* <div className="mr-8">
+                  <div className="text-gray3 flex items-center">
+                    <div className="mr-8 hover:cursor-pointer hover:text-aqua home">
+                      <a className="text-aqua ">01.</a> Home
+                    </div>
+                    {/* <div className="mr-8">
                   <a className="text-aqua">2.</a> About
                 </div> */}
-                  <div
-                    className="mr-8 hover:cursor-pointer hover:text-aqua project-nav"
-                    onClick={handleProjectScroll}
-                  >
-                    <a className="text-aqua">02.</a> Projects
-                  </div>
-                  <div
-                    className="mr-8 hover:cursor-pointer hover:text-aqua contact-nav"
-                    onClick={handleContactScroll}
-                  >
-                    <a className="text-aqua">03.</a> Contact
-                  </div>
-                  <div
-                    className="border border-aqua2 resume text-aqua2 rounded-md px-3 py-2 "
-                    onClick={onResumeClick}
-                  >
-                    Resume
+                    <div
+                      className="mr-8 hover:cursor-pointer hover:text-aqua project-nav"
+                      onClick={handleProjectScroll}
+                    >
+                      <a className="text-aqua">02.</a> Projects
+                    </div>
+                    <div
+                      className="mr-8 hover:cursor-pointer hover:text-aqua contact-nav"
+                      onClick={handleContactScroll}
+                    >
+                      <a className="text-aqua">03.</a> Contact
+                    </div>
+                    <div
+                      className="border border-aqua2 resume text-aqua2 rounded-md px-3 py-2 "
+                      onClick={onResumeClick}
+                    >
+                      Resume
+                    </div>
                   </div>
                 </div>
               </div>
@@ -131,7 +133,7 @@ const LandingPage = () => {
           </div>
         </div>
         <div className="about-title flex items-center pt-10" ref={projects}>
-          <ScrollAnimation animateIn="fadeInUp" animateOnce="true">
+          <ScrollAnimation animateIn="animate__fadeInUp" animateOnce="true">
             <div className="text-gray2 font-sans text-2xl">
               <a className="text-aqua font-mono">02.</a>
               <a className="font-bold"> Some things I've built</a>
@@ -143,72 +145,74 @@ const LandingPage = () => {
         </div>
 
         <div className="projects flex items-center justify-center">
-          <div className="project-div flex py-10 justify-center">
-            <div className="pb-0 mb-0">
-              <div className="w-full flex justify-center items-center mb-10">
-                <div className="text-aqua font-mono text-2xl">
-                  Featured Project -{" "}
-                  <a
-                    className="text-gray3 font-sans font-semibold text-2xl link hover:cursor-pointer hover:text-aqua2"
-                    href="https://game-app-e3cd9.web.app/"
-                    target="_blank"
-                  >
-                    Megaman VS Samus
-                  </a>
-                </div>
-                {/* <div className="text-gray3 font-sans font-semibold text-2xl">
+          <ScrollAnimation animateIn="animate__fadeInUp" animateOnce="true">
+            <div className="project-div flex py-10 justify-center">
+              <div className="pb-0 mb-0">
+                <div className="w-full flex justify-center items-center mb-10">
+                  <div className="text-aqua font-mono text-2xl">
+                    Featured Project -{" "}
+                    <a
+                      className="text-gray3 font-sans font-semibold text-2xl link hover:cursor-pointer hover:text-aqua2"
+                      href="https://game-app-e3cd9.web.app/"
+                      target="_blank"
+                    >
+                      Megaman VS Samus
+                    </a>
+                  </div>
+                  {/* <div className="text-gray3 font-sans font-semibold text-2xl">
                 Megaman VS Samus
               </div> */}
-              </div>
-
-              <div className="project-content flex mb-10 items-center">
-                {/* <div className="project-libraries border border-red-500">code</div> */}
-                <div className="project-photos flex items-center px-10">
-                  <a
-                    href="https://game-app-e3cd9.web.app/"
-                    target="_blank"
-                    className="game-wrapper rounded-xl"
-                  ></a>
-                  <img src={game} className="game-photo rounded-xl" />
                 </div>
-                <div className="project-text pr-10 flex items-center font-sans">
-                  <div>
-                    <div className="text-gray4 text-center">
-                      <a
-                        className="text-aqua2 link"
-                        href="https://game-app-e3cd9.web.app/"
-                        target="_blank"
-                      >
-                        Megaman vs Samus
-                      </a>{" "}
-                      is a simple turn-based combat game that I had a lot of fun
-                      making. Users play as Megaman an choose between three
-                      ability options to take down the AI opponent Samus. In
-                      this app I used React hooks to compute the AI opponent
-                      choices, create the batle sequence and configure narrator
-                      announcements.
-                    </div>
-                    <div className="text-gray4 text-center mt-3">
-                      The styling is done with pure CSS and some basic CSS
-                      animation are used too. I also used some more complex
-                      Javascript syntax to build the battle sequence, such as an
-                      IIFE (immediately invoked function expression).
-                    </div>
-                    {/* <div className="text-gray4 text-center mt-3">
+
+                <div className="project-content flex mb-10 items-center">
+                  {/* <div className="project-libraries border border-red-500">code</div> */}
+                  <div className="project-photos flex items-center px-10">
+                    <a
+                      href="https://game-app-e3cd9.web.app/"
+                      target="_blank"
+                      className="game-wrapper rounded-xl"
+                    ></a>
+                    <img src={game} className="game-photo rounded-xl" />
+                  </div>
+                  <div className="project-text pr-10 flex items-center font-sans">
+                    <div>
+                      <div className="text-gray4 text-center">
+                        <a
+                          className="text-aqua2 link"
+                          href="https://game-app-e3cd9.web.app/"
+                          target="_blank"
+                        >
+                          Megaman vs Samus
+                        </a>{" "}
+                        is a simple turn-based combat game that I had a lot of
+                        fun making. Users play as Megaman an choose between
+                        three ability options to take down the AI opponent
+                        Samus. In this app I used React hooks to compute the AI
+                        opponent choices, create the batle sequence and
+                        configure narrator announcements.
+                      </div>
+                      <div className="text-gray4 text-center mt-3">
+                        The styling is done with pure CSS and some basic CSS
+                        animation are used too. I also used some more complex
+                        Javascript syntax to build the battle sequence, such as
+                        an IIFE (immediately invoked function expression).
+                      </div>
+                      {/* <div className="text-gray4 text-center mt-3">
                     No login is needed for this app. Good luck defeating Samus!{" "}
                   </div> */}
+                    </div>
+                  </div>
+                </div>
+                <div className="project-code flex justify-center">
+                  <div className="w-1/3 flex justify-between text-aqua font-mono">
+                    <div>React</div>
+                    <div>CSS</div>
+                    <div>JavaScript</div>
                   </div>
                 </div>
               </div>
-              <div className="project-code flex justify-center">
-                <div className="w-1/3 flex justify-between text-aqua font-mono">
-                  <div>React</div>
-                  <div>CSS</div>
-                  <div>JavaScript</div>
-                </div>
-              </div>
             </div>
-          </div>
+          </ScrollAnimation>
         </div>
         {/* <div className="about-div flex items-center justify-center">
         <div className="about-main flex">
@@ -226,218 +230,226 @@ const LandingPage = () => {
         </div>
       </div> */}
         <div className="flex mt-32 items-center justify-center">
-          <div className="project-div flex py-10 justify-center">
-            <div className="">
-              <div className="w-full flex justify-center items-center mb-10">
-                <div className="text-aqua font-mono text-2xl">
-                  Featured Project -{" "}
-                  <a
-                    href="https://job-app-two.web.app/"
-                    target="_blank"
-                    className="text-gray3 font-sans font-semibold text-2xl link hover:text-aqua2"
-                  >
-                    JobWorm
-                  </a>
-                </div>
-                {/* <div className="text-gray3 font-sans font-semibold text-2xl">
+          <ScrollAnimation animateIn="animate__fadeInUp" animateOnce="true">
+            <div className="project-div flex py-10 justify-center">
+              <div className="">
+                <div className="w-full flex justify-center items-center mb-10">
+                  <div className="text-aqua font-mono text-2xl">
+                    Featured Project -{" "}
+                    <a
+                      href="https://job-app-two.web.app/"
+                      target="_blank"
+                      className="text-gray3 font-sans font-semibold text-2xl link hover:text-aqua2"
+                    >
+                      JobWorm
+                    </a>
+                  </div>
+                  {/* <div className="text-gray3 font-sans font-semibold text-2xl">
                 Megaman VS Samus
               </div> */}
-              </div>
-
-              <div className="project-content flex mb-10 items-center">
-                {/* <div className="project-libraries border border-red-500">code</div> */}
-                <div className="project-photos flex items-center px-10">
-                  <a
-                    href="https://job-app-two.web.app/"
-                    target="_blank"
-                    className="job-wrapper rounded-xl"
-                  ></a>
-                  <img src={job} className="job-photo rounded-xl" />
                 </div>
-                <div className="project-text pr-10 flex items-center font-sans">
-                  <div>
-                    <div className="text-gray4 text-center">
-                      <a
-                        href="https://job-app-two.web.app/"
-                        target="_blank"
-                        className="text-aqua2 link"
-                      >
-                        JobWorm
-                      </a>{" "}
-                      is a simple job board that allows users interact with each
-                      other by posting, viewing and commenting on job offers.
-                      Upon signing in, users are taken to a home page where they
-                      can view and comment of job offers created by fellow
-                      users. They can also post and delete their own job listing
-                      with a couple button clicks.
-                    </div>
-                    <div className="text-gray4 text-center mt-3">
-                      For this app, I built the back-end myself by making a
-                      RESTful API with Node.js and Express. This gave me a
-                      better understanding of how the front-end and back-end
-                      interact with one another. Like with my quiz app, Firebase
-                      was used for user-authentication and tailwind was used for
-                      styling.
-                    </div>
-                    {/* <div className="text-gray4 text-center mt-3">
+
+                <div className="project-content flex mb-10 items-center">
+                  {/* <div className="project-libraries border border-red-500">code</div> */}
+                  <div className="project-photos flex items-center px-10">
+                    <a
+                      href="https://job-app-two.web.app/"
+                      target="_blank"
+                      className="job-wrapper rounded-xl"
+                    ></a>
+                    <img src={job} className="job-photo rounded-xl" />
+                  </div>
+                  <div className="project-text pr-10 flex items-center font-sans">
+                    <div>
+                      <div className="text-gray4 text-center">
+                        <a
+                          href="https://job-app-two.web.app/"
+                          target="_blank"
+                          className="text-aqua2 link"
+                        >
+                          JobWorm
+                        </a>{" "}
+                        is a simple job board that allows users interact with
+                        each other by posting, viewing and commenting on job
+                        offers. Upon signing in, users are taken to a home page
+                        where they can view and comment of job offers created by
+                        fellow users. They can also post and delete their own
+                        job listing with a couple button clicks.
+                      </div>
+                      <div className="text-gray4 text-center mt-3">
+                        For this app, I built the back-end myself by making a
+                        RESTful API with Node.js and Express. This gave me a
+                        better understanding of how the front-end and back-end
+                        interact with one another. Like with my quiz app,
+                        Firebase was used for user-authentication and tailwind
+                        was used for styling.
+                      </div>
+                      {/* <div className="text-gray4 text-center mt-3">
                     You can use the user details below to browse my app or feel
                     free to create your own account. User:
                     james.clarke@gmail.com Password: james123{" "}
                   </div> */}
+                    </div>
+                  </div>
+                </div>
+                <div className="project-code flex justify-center">
+                  <div className="w-1/2 flex justify-between text-aqua font-mono">
+                    <div>React</div>
+                    <div>REST API</div>
+                    <div>Firebase</div>
+                    <div>Tailwind</div>
                   </div>
                 </div>
               </div>
-              <div className="project-code flex justify-center">
-                <div className="w-1/2 flex justify-between text-aqua font-mono">
-                  <div>React</div>
-                  <div>REST API</div>
-                  <div>Firebase</div>
-                  <div>Tailwind</div>
-                </div>
-              </div>
             </div>
-          </div>
+          </ScrollAnimation>
         </div>
 
         <div className="flex mt-32 items-center justify-center">
-          <div className="project-div flex py-10 justify-center">
-            <div className="">
-              <div className="w-full flex justify-center items-center mb-10">
-                <div className="text-aqua font-mono text-2xl">
-                  Featured Project -{" "}
-                  <a
-                    href="https://quiz-app-tailwind-draft-1.web.app/"
-                    target="_blank"
-                    className="text-gray3 font-sans font-semibold text-2xl hover:text-aqua2 link"
-                  >
-                    The Quiz Club
-                  </a>
-                </div>
-                {/* <div className="text-gray3 font-sans font-semibold text-2xl">
+          <ScrollAnimation animateIn="animate__fadeInUp" animateOnce="true">
+            <div className="project-div flex py-10 justify-center">
+              <div className="">
+                <div className="w-full flex justify-center items-center mb-10">
+                  <div className="text-aqua font-mono text-2xl">
+                    Featured Project -{" "}
+                    <a
+                      href="https://quiz-app-tailwind-draft-1.web.app/"
+                      target="_blank"
+                      className="text-gray3 font-sans font-semibold text-2xl hover:text-aqua2 link"
+                    >
+                      The Quiz Club
+                    </a>
+                  </div>
+                  {/* <div className="text-gray3 font-sans font-semibold text-2xl">
                 Megaman VS Samus
               </div> */}
-              </div>
-
-              <div className="project-content flex mb-10 items-center">
-                {/* <div className="project-libraries border border-red-500">code</div> */}
-                <div className="project-photos flex items-center px-10">
-                  <a
-                    href="https://quiz-app-tailwind-draft-1.web.app/"
-                    target="_blank"
-                    className="quiz-wrapper rounded-xl"
-                  ></a>
-                  <img src={quiz} className="quiz-photo rounded-xl" />
                 </div>
-                <div className="project-text pr-10 flex items-center font-sans">
-                  <div>
-                    <div className="text-gray4 text-center">
-                      <a
-                        href="https://quiz-app-tailwind-draft-1.web.app/"
-                        target="_blank"
-                        className="text-aqua2 link"
-                      >
-                        The Quiz Club
-                      </a>{" "}
-                      is my attempt at an elevated version of the classic
-                      Javascript quiz. When users complete quizes, their results
-                      and data automatically saved on the back-end. This data is
-                      then presently cleanly on their Profile page so they can
-                      see their progress. React was used for the front-end with
-                      Tailwind for a modern and responsive website style. I used
-                      Firebase User Authentication and Realtime Database to
-                      create a userbase and store back-end data.
-                    </div>
-                    <div className="text-gray4 text-center mt-3">
-                      In making this website I learnt how to manipulate data
-                      arrays and objects with more advanced Javascript to
-                      present data in a clear and useful way for users. I also
-                      learnt how to use Firebase to create a secure back-end and
-                      how to connect this to the front-end with HTTP Requests.
-                    </div>
-                    {/* <div className="text-gray4 text-center mt-3">
+
+                <div className="project-content flex mb-10 items-center">
+                  {/* <div className="project-libraries border border-red-500">code</div> */}
+                  <div className="project-photos flex items-center px-10">
+                    <a
+                      href="https://quiz-app-tailwind-draft-1.web.app/"
+                      target="_blank"
+                      className="quiz-wrapper rounded-xl"
+                    ></a>
+                    <img src={quiz} className="quiz-photo rounded-xl" />
+                  </div>
+                  <div className="project-text pr-10 flex items-center font-sans">
+                    <div>
+                      <div className="text-gray4 text-center">
+                        <a
+                          href="https://quiz-app-tailwind-draft-1.web.app/"
+                          target="_blank"
+                          className="text-aqua2 link"
+                        >
+                          The Quiz Club
+                        </a>{" "}
+                        is my attempt at an elevated version of the classic
+                        Javascript quiz. When users complete quizes, their
+                        results and data automatically saved on the back-end.
+                        This data is then presently cleanly on their Profile
+                        page so they can see their progress. React was used for
+                        the front-end with Tailwind for a modern and responsive
+                        website style. I used Firebase User Authentication and
+                        Realtime Database to create a userbase and store
+                        back-end data.
+                      </div>
+                      <div className="text-gray4 text-center mt-3">
+                        In making this website I learnt how to manipulate data
+                        arrays and objects with more advanced Javascript to
+                        present data in a clear and useful way for users. I also
+                        learnt how to use Firebase to create a secure back-end
+                        and how to connect this to the front-end with HTTP
+                        Requests.
+                      </div>
+                      {/* <div className="text-gray4 text-center mt-3">
                     You can use the user details below to browse my app or feel
                     free to create your own account. User:
                     james.clarke@gmail.com Password: james123{" "}
                   </div> */}
+                    </div>
+                  </div>
+                </div>
+                <div className="project-code flex justify-center">
+                  <div className="w-1/3 flex justify-between text-aqua font-mono">
+                    <div>React</div>
+                    <div>Firebase</div>
+                    <div>Tailwind</div>
                   </div>
                 </div>
               </div>
-              <div className="project-code flex justify-center">
-                <div className="w-1/3 flex justify-between text-aqua font-mono">
-                  <div>React</div>
-                  <div>Firebase</div>
-                  <div>Tailwind</div>
-                </div>
-              </div>
             </div>
-          </div>
+          </ScrollAnimation>
         </div>
 
         <div className="flex mt-32 items-center justify-center pb-5">
-          <div className="project-div flex py-10 justify-center">
-            <div className="">
-              <div className="w-full flex justify-center items-center mb-10">
-                <div className="text-aqua font-mono text-2xl">
-                  Featured Project -{" "}
-                  <a
-                    href="https://css-app-d35be.web.app/"
-                    target="_blank"
-                    className="text-gray3 font-sans font-semibold text-2xl hover:text-aqua2 link"
-                  >
-                    Todoist Clone
-                  </a>
-                </div>
-                {/* <div className="text-gray3 font-sans font-semibold text-2xl">
+          <ScrollAnimation animateIn="animate__fadeInUp" animateOnce="true">
+            <div className="project-div flex py-10 justify-center">
+              <div className="">
+                <div className="w-full flex justify-center items-center mb-10">
+                  <div className="text-aqua font-mono text-2xl">
+                    Featured Project -{" "}
+                    <a
+                      href="https://css-app-d35be.web.app/"
+                      target="_blank"
+                      className="text-gray3 font-sans font-semibold text-2xl hover:text-aqua2 link"
+                    >
+                      Todoist Clone
+                    </a>
+                  </div>
+                  {/* <div className="text-gray3 font-sans font-semibold text-2xl">
                 Megaman VS Samus
               </div> */}
-              </div>
-
-              <div className="project-content flex mb-10 items-center">
-                {/* <div className="project-libraries border border-red-500">code</div> */}
-                <div className="project-photos flex items-center px-10">
-                  <a
-                    href="https://css-app-d35be.web.app/"
-                    target="_blank"
-                    className="css-wrapper rounded-xl"
-                  ></a>
-                  <img src={css} className="css-photo rounded-xl" />
                 </div>
-                <div className="project-text pr-10 flex items-center font-sans">
-                  <div>
-                    <div className="text-gray4 text-center">
-                      My{" "}
-                      <a
-                        href="https://css-app-d35be.web.app/"
-                        target="_blank"
-                        className="text-aqua2 link"
-                      >
-                        Todoist Clone
-                      </a>{" "}
-                      is a copy of the Todoist app made purely from HTML, CSS
-                      and Boostrap. This project was aimed to challenge my
-                      understanding of raw CSS and apply the Bootstrap grid
-                      structure.
-                    </div>
-                    <div className="text-gray4 text-center mt-3">
-                      I had to pay careful attention to small details in order
-                      to create this app and learnt how to use media queries for
-                      responsiveness.
-                    </div>
-                    <div className="text-gray4 text-center mt-3">
-                      No login is needed to browse this app. Enjoy!
+
+                <div className="project-content flex mb-10 items-center">
+                  {/* <div className="project-libraries border border-red-500">code</div> */}
+                  <div className="project-photos flex items-center px-10">
+                    <a
+                      href="https://css-app-d35be.web.app/"
+                      target="_blank"
+                      className="css-wrapper rounded-xl"
+                    ></a>
+                    <img src={css} className="css-photo rounded-xl" />
+                  </div>
+                  <div className="project-text pr-10 flex items-center font-sans">
+                    <div>
+                      <div className="text-gray4 text-center">
+                        My{" "}
+                        <a
+                          href="https://css-app-d35be.web.app/"
+                          target="_blank"
+                          className="text-aqua2 link"
+                        >
+                          Todoist Clone
+                        </a>{" "}
+                        is a copy of the Todoist app made purely from HTML, CSS
+                        and Boostrap. This project was aimed to challenge my
+                        understanding of raw CSS and apply the Bootstrap grid
+                        structure.
+                      </div>
+                      <div className="text-gray4 text-center mt-3">
+                        I had to pay careful attention to small details in order
+                        to create this app and learnt how to use media queries
+                        for responsiveness.
+                      </div>
+                      <div className="text-gray4 text-center mt-3">
+                        No login is needed to browse this app. Enjoy!
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="project-code flex justify-center">
-                <div className="w-1/3 flex justify-between text-aqua font-mono">
-                  <div>HTML</div>
-                  <div>CSS</div>
-                  <div>Bootstrap</div>
+                <div className="project-code flex justify-center">
+                  <div className="w-1/3 flex justify-between text-aqua font-mono">
+                    <div>HTML</div>
+                    <div>CSS</div>
+                    <div>Bootstrap</div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </ScrollAnimation>
         </div>
         <div className="contact-page flex items-center justify-between">
           <div className="email-wrapper items-end justify-end ml-10">
@@ -472,24 +484,26 @@ const LandingPage = () => {
             <div className="line vertical"></div>
           </div>{" "}
           <div className="flex items-center contact-wrapper">
-            <div className="contact-main text-center">
-              <div className="text-aqua font-mono mb-4" ref={contact}>
-                03. What's Next?
+            <ScrollAnimation animateIn="animate__fadeInUp" animateOnce="true">
+              <div className="contact-main text-center">
+                <div className="text-aqua font-mono mb-4" ref={contact}>
+                  03. What's Next?
+                </div>
+                <div className="text-gray3 font-sans font-bold text-5xl mb-5">
+                  Get In Touch
+                </div>
+                <div className="text-gray font-sans">
+                  I'm always open to new opportunities, or even just a friendly
+                  conversation. If you'd like to contact me, please click below
+                  and I'll do my best to get back to you!
+                </div>
+                <div className="w-full flex justify-center mt-10">
+                  <div className="border border-aqua2 text-aqua font-mono text-sm rounded-md px-6 py-4 hello">
+                    Say Hello
+                  </div>{" "}
+                </div>
               </div>
-              <div className="text-gray3 font-sans font-bold text-5xl mb-5">
-                Get In Touch
-              </div>
-              <div className="text-gray font-sans">
-                I'm always open to new opportunities, or even just a friendly
-                conversation. If you'd like to contact me, please click below
-                and I'll do my best to get back to you!
-              </div>
-              <div className="w-full flex justify-center mt-10">
-                <div className="border border-aqua2 text-aqua font-mono text-sm rounded-md px-6 py-4 hello">
-                  Say Hello
-                </div>{" "}
-              </div>
-            </div>
+            </ScrollAnimation>
           </div>
           <div className="email-wrapper items-end justify-end mr-10">
             <a
