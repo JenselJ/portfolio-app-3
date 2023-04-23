@@ -105,21 +105,21 @@ const LandingPage = () => {
               </div>
               <div className="main-content pb-12">
                 <div className="main-content-child flex items-center justify-between">
-                  <div className="main-content-grandchild flex font-sans text-gray">
+                  <div className="main-content-grandchild flex font-sans text-gray items-center">
                     <div className="welcome-wrapper">
                       <div className="welcome text-gray2 font-semibold">
                         Welcome.
                       </div>
-                      <div className="text-4xl 2xl:text-4xl text-gray font-semibold welcome-text-1">
+                      <div className="lg:text-3xl xl:text-4xl 2xl:text-4xl text-gray font-semibold welcome-text-1">
                         I'm Sunny and I build things for the web.
                       </div>
-                      <div className="mt-8 text-lg 2xl:text-lg welcome-text-2">
+                      <div className="mt-8 lg:text-md xl:text-lg 2xl:text-lg welcome-text-2">
                         I'm a junior web developer working part-time at{" "}
                         <a className="text-aqua2 link">SurryHQ.</a> My goal
                         right now is to transition into a full-time role where I
                         can grow my skillset and break deeper into the industry.
                       </div>
-                      <div className="mt-4 text-lg welcome-text-3">
+                      <div className="mt-4 lg:text-md xl:text-lg welcome-text-3">
                         I'm comfortable working full-stack but my strength lies
                         in front-end (JavaScript) where I have commercial
                         experience in Angular and React.
@@ -140,13 +140,14 @@ const LandingPage = () => {
         </div>
         <div className="about-title flex items-center pt-10" ref={projects}>
           <ScrollAnimation animateIn="animate__fadeInUp" animateOnce="true">
-            <div className="text-gray2 font-sans text-2xl">
-              <a className="text-aqua font-mono">02.</a>
-              <a className="font-bold"> Some things I've built</a>
-            </div>
+            <div className="flex items-center">
+              <div className="text-gray2 font-sans text-2xl">
+                <a className="text-aqua font-mono">02.</a>
+                <a className="font-bold"> Some things I've built</a>
+              </div>
 
-            <div></div>
-            <div className="line"></div>
+              <div className="line"></div>
+            </div>
           </ScrollAnimation>
         </div>
 
