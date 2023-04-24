@@ -1,5 +1,7 @@
 .app-div {
   height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 
 .base-div {
@@ -609,7 +611,7 @@
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1280px) and (max-width: 1535px) {
   .welcome {
     font-size: 100px;
   }
@@ -637,7 +639,7 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1279px) {
   .welcome {
     font-size: 100px;
   }
@@ -662,5 +664,125 @@
   }
   .photo {
     margin-right: 0%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .welcome {
+    font-size: 100px;
+  }
+  .sunny {
+    margin-top: 25px;
+    max-height: 250px;
+    max-width: 250px;
+  }
+  .sunny-wrapper {
+    max-height: 250px;
+    max-width: 250px;
+  }
+  .sunny-img {
+    max-height: 250px;
+    max-width: 250px;
+  }
+  .sunny-outline {
+    max-height: 250px;
+    max-width: 250px;
+  }
+  .main-content-grandchild {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 3%;
+    margin-bottom: 0;
+    height: 50%;
+    /* margin-top: 3%; */
+  }
+  .welcome-wrapper {
+    width: 80%;
+  }
+  .photo {
+    margin-right: 0%;
+    width: 100%;
+    height: 50%;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+  .welcome {
+    font-size: 80px;
+  }
+  .sunny {
+    margin-top: 25px;
+    max-height: 200px;
+    max-width: 200px;
+  }
+  .sunny-wrapper {
+    max-height: 200px;
+    max-width: 200px;
+  }
+  .sunny-img {
+    max-height: 200px;
+    max-width: 200px;
+  }
+  .sunny-outline {
+    max-height: 200px;
+    max-width: 200px;
+  }
+  .main-content-grandchild {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 3%;
+    margin-bottom: 0;
+    height: 50%;
+    /* margin-top: 3%; */
+  }
+  .welcome-wrapper {
+    width: 80%;
+  }
+  .photo {
+    margin-right: 0%;
+    width: 100%;
+    height: 50%;
+  }
+}
+
+@media (max-width: 639px) {
+  .welcome {
+    font-size: 60px;
+  }
+  .sunny {
+    margin-top: 25px;
+    max-height: 150px;
+    max-width: 150px;
+  }
+  .sunny-wrapper {
+    max-height: 150px;
+    max-width: 150px;
+  }
+  .sunny-img {
+    max-height: 150px;
+    max-width: 150px;
+  }
+  .sunny-outline {
+    max-height: 150px;
+    max-width: 150px;
+  }
+  .main-content-grandchild {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 3%;
+    margin-bottom: 0;
+    height: 50%;
+    /* margin-top: 3%; */
+  }
+  .welcome-wrapper {
+    width: 80%;
+  }
+  .photo {
+    margin-right: 0%;
+    width: 100%;
+    height: 50%;
   }
 }
