@@ -749,30 +749,34 @@
 
 @media (max-width: 639px) {
   .welcome {
-    font-size: 60px;
+    font-size: 55px;
   }
   .sunny {
     margin-top: 25px;
-    max-height: 150px;
-    max-width: 150px;
+    max-height: 200px;
+    max-width: 200px;
   }
   .sunny-wrapper {
-    max-height: 150px;
-    max-width: 150px;
+    max-height: 200px;
+    max-width: 200px;
   }
   .sunny-img {
-    max-height: 150px;
-    max-width: 150px;
+    max-height: 200px;
+    max-width: 200px;
   }
   .sunny-outline {
-    max-height: 150px;
-    max-width: 150px;
+    max-height: 200px;
+    max-width: 200px;
+    transform: translate(15px, 15px);
+  }
+  .sunny-outline:hover {
+    transform: translate(10px, 10px);
   }
   .main-content-grandchild {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-left: 3%;
+    margin-left: 1%;
     margin-bottom: 0;
     height: 50%;
     /* margin-top: 3%; */
@@ -784,5 +788,27 @@
     margin-right: 0%;
     width: 100%;
     height: 50%;
+  }
+
+  .triangle-top-left {
+    width: 0;
+    height: 0;
+    border-top: 200px solid #59ffd5;
+    border-right: 200px solid transparent;
+    border-top-left-radius: 15px;
+  }
+
+  .triangle-bottom-right {
+    width: 0;
+    height: 0;
+    border-bottom: 200px solid #59ffd5;
+    border-left: 200px solid transparent;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-bottom-right-radius: 15px;
+  }
+  .base-div {
+    height: calc(100vh);
   }
 }

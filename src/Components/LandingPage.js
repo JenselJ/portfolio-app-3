@@ -43,7 +43,7 @@ const LandingPage = () => {
             <div className="triangle-top-left"></div>
             <div className="triangle-bottom-right"></div>
           </div>
-          <div className="main-div p-12">
+          <div className="main-div p-8 sm:p-12">
             <div className="main-div-child">
               <div className="nav-wrapper">
                 <div className="nav-div h-12 flex justify-between px-4 items-center font-mono">
@@ -72,7 +72,7 @@ const LandingPage = () => {
                   </div>
                   <div className="text-gray3 flex items-center">
                     <div
-                      className="mr-8 hover:cursor-pointer hover:text-aqua home"
+                      className="text-xs sm:text-md mr-3 sm:mr-8 hover:cursor-pointer hover:text-aqua home"
                       onClick={() => {
                         setId(id + 1);
                       }}
@@ -83,19 +83,19 @@ const LandingPage = () => {
                   <a className="text-aqua">2.</a> About
                 </div> */}
                     <div
-                      className="mr-8 hover:cursor-pointer hover:text-aqua project-nav"
+                      className="text-xs sm:text-md mr-3 sm:mr-8 hover:cursor-pointer hover:text-aqua project-nav"
                       onClick={handleProjectScroll}
                     >
                       <a className="text-aqua">02.</a> Projects
                     </div>
                     <div
-                      className="mr-8 hover:cursor-pointer hover:text-aqua contact-nav"
+                      className="text-xs sm:text-md mr-3 sm:mr-8 hover:cursor-pointer hover:text-aqua contact-nav"
                       onClick={handleContactScroll}
                     >
                       <a className="text-aqua">03.</a> Contact
                     </div>
                     <div
-                      className="border border-aqua2 resume text-aqua2 rounded-md px-3 py-2 "
+                      className="text-xs sm:text-md border border-aqua2 resume text-aqua2 rounded-md px-2.5 py-1.5 sm:px-3 sm:py-2"
                       onClick={onResumeClick}
                     >
                       Resume
@@ -110,16 +110,16 @@ const LandingPage = () => {
                       <div className="welcome text-gray2 font-semibold">
                         Welcome.
                       </div>
-                      <div className="text-md sm:text-xl lg:text-3xl xl:text-4xl 2xl:text-4xl text-gray font-semibold welcome-text-1">
+                      <div className="text-sm sm:text-xl lg:text-3xl xl:text-4xl 2xl:text-4xl text-gray font-semibold welcome-text-1">
                         I'm Sunny and I build things for the web.
                       </div>
-                      <div className="mt-8 text-xs sm:text-sm lg:text-md xl:text-lg 2xl:text-lg welcome-text-2">
+                      <div className="mt-4 sm:mt-8 text-xs sm:text-sm lg:text-md xl:text-lg 2xl:text-lg welcome-text-2">
                         I'm a junior web developer working part-time at{" "}
                         <a className="text-aqua2 link">SurryHQ.</a> My goal
                         right now is to transition into a full-time role where I
                         can grow my skillset and break deeper into the industry.
                       </div>
-                      <div className="mt-4 text-xs sm:text-sm lg:text-md xl:text-lg welcome-text-3">
+                      <div className="mt-2 sm:mt-4 text-xs sm:text-sm lg:text-md xl:text-lg welcome-text-3">
                         I'm comfortable working full-stack but my strength lies
                         in front-end (JavaScript) where I have commercial
                         experience in Angular and React.
