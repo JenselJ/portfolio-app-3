@@ -132,6 +132,13 @@
   margin-left: 20px;
 }
 
+.line-2 {
+  height: 1px;
+  background-color: #202f4a;
+  width: 200px;
+  margin-left: 20px;
+}
+
 .sunny {
   height: 300px;
   width: 300px;
@@ -810,5 +817,61 @@
   }
   .base-div {
     height: calc(100vh);
+  }
+  .project-div {
+    width: 90%;
+    margin: auto;
+  }
+  .project-text {
+    padding-top: 5%;
+    width: 90%;
+    margin: auto;
+  }
+  .project-photos {
+    width: 320px;
+    margin: auto;
+  }
+  .game-wrapper {
+    width: 320px;
+    height: 227px;
+    opacity: 0;
+  }
+  .project-code-child {
+    width: 70%;
+  }
+  .project-code-child-2 {
+    width: 95%;
+  }
+  .job-wrapper {
+    width: 320px;
+    height: 209px;
+    opacity: 0;
+  }
+  .quiz-wrapper {
+    width: 320px;
+    height: 238px;
+    opacity: 0;
+  }
+  .css-wrapper {
+    width: 320px;
+    height: 200px;
+    opacity: 0;
+  }
+  .about-title {
+    margin-left: 5%;
+  }
+  .line-2 {
+    display: none;
+  }
+  .num {
+    display: none;
+  }
+  .contact-main {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+  }
+  .line {
+    height: 50px;
   }
 }

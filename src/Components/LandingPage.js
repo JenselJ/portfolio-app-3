@@ -77,7 +77,7 @@ const LandingPage = () => {
                         setId(id + 1);
                       }}
                     >
-                      <a className="text-aqua ">01.</a> Home
+                      <a className="text-aqua num ">01. </a>Home
                     </div>
                     {/* <div className="mr-8">
                   <a className="text-aqua">2.</a> About
@@ -86,13 +86,13 @@ const LandingPage = () => {
                       className="text-xs sm:text-md mr-3 sm:mr-8 hover:cursor-pointer hover:text-aqua project-nav"
                       onClick={handleProjectScroll}
                     >
-                      <a className="text-aqua">02.</a> Projects
+                      <a className="text-aqua num">02. </a>Projects
                     </div>
                     <div
                       className="text-xs sm:text-md mr-3 sm:mr-8 hover:cursor-pointer hover:text-aqua contact-nav"
                       onClick={handleContactScroll}
                     >
-                      <a className="text-aqua">03.</a> Contact
+                      <a className="text-aqua num">03. </a>Contact
                     </div>
                     <div
                       className="text-xs sm:text-md border border-aqua2 resume text-aqua2 rounded-md px-2.5 py-1.5 sm:px-3 sm:py-2"
@@ -141,12 +141,12 @@ const LandingPage = () => {
         <div className="about-title flex items-center pt-10" ref={projects}>
           <ScrollAnimation animateIn="animate__fadeInUp" animateOnce="true">
             <div className="flex items-center">
-              <div className="text-gray2 font-sans text-2xl">
+              <div className="text-gray2 font-sans text-xl md:text-2xl">
                 <a className="text-aqua font-mono">02.</a>
                 <a className="font-bold"> Some things I've built</a>
               </div>
 
-              <div className="line"></div>
+              <div className="line-2"></div>
             </div>
           </ScrollAnimation>
         </div>
@@ -156,10 +156,10 @@ const LandingPage = () => {
             <div className="project-div flex py-10 justify-center">
               <div className="pb-0 mb-0">
                 <div className="w-full flex justify-center items-center mb-10">
-                  <div className="text-aqua font-mono text-2xl">
+                  <div className="text-aqua font-mono text-center text-xl md:text-2xl">
                     Featured Project -{" "}
                     <a
-                      className="text-gray3 font-sans font-semibold text-2xl link hover:cursor-pointer hover:text-aqua2"
+                      className="text-gray3 font-sans font-semibold text-xl md:text-2xl link hover:cursor-pointer hover:text-aqua2"
                       href="https://game-app-e3cd9.web.app/"
                       target="_blank"
                     >
@@ -171,9 +171,9 @@ const LandingPage = () => {
               </div> */}
                 </div>
 
-                <div className="project-content flex mb-10 items-center">
+                <div className="project-content md:flex mb-10 items-center">
                   {/* <div className="project-libraries border border-red-500">code</div> */}
-                  <div className="project-photos flex items-center px-10">
+                  <div className="project-photos flex items-center md:px-10">
                     <a
                       href="https://game-app-e3cd9.web.app/"
                       target="_blank"
@@ -181,7 +181,7 @@ const LandingPage = () => {
                     ></a>
                     <img src={game} className="game-photo rounded-xl" />
                   </div>
-                  <div className="project-text pr-10 flex items-center font-sans">
+                  <div className="project-text md:pr-10 flex items-center font-sans">
                     <div>
                       <div className="text-gray4 text-center">
                         <a
@@ -211,7 +211,7 @@ const LandingPage = () => {
                   </div>
                 </div>
                 <div className="project-code flex justify-center">
-                  <div className="w-1/3 flex justify-between text-aqua font-mono">
+                  <div className="project-code-child md:w-1/3 flex justify-between text-aqua font-mono">
                     <div>React</div>
                     <div>CSS</div>
                     <div>JavaScript</div>
@@ -241,12 +241,12 @@ const LandingPage = () => {
             <div className="project-div flex py-10 justify-center">
               <div className="">
                 <div className="w-full flex justify-center items-center mb-10">
-                  <div className="text-aqua font-mono text-2xl">
+                  <div className="text-aqua text-center font-mono text-xl md:text-2xl">
                     Featured Project -{" "}
                     <a
                       href="https://job-app-two.web.app/"
                       target="_blank"
-                      className="text-gray3 font-sans font-semibold text-2xl link hover:text-aqua2"
+                      className="text-gray3 font-sans font-semibold text-xl md:text-2xl link hover:text-aqua2"
                     >
                       JobWorm
                     </a>
@@ -256,9 +256,9 @@ const LandingPage = () => {
               </div> */}
                 </div>
 
-                <div className="project-content flex mb-10 items-center">
+                <div className="project-content md:flex mb-10 items-center">
                   {/* <div className="project-libraries border border-red-500">code</div> */}
-                  <div className="project-photos flex items-center px-10">
+                  <div className="project-photos flex items-center md:px-10">
                     <a
                       href="https://job-app-two.web.app/"
                       target="_blank"
@@ -266,7 +266,7 @@ const LandingPage = () => {
                     ></a>
                     <img src={job} className="job-photo rounded-xl" />
                   </div>
-                  <div className="project-text pr-10 flex items-center font-sans">
+                  <div className="project-text md:pr-10 flex items-center font-sans">
                     <div>
                       <div className="text-gray4 text-center">
                         <a
@@ -300,7 +300,7 @@ const LandingPage = () => {
                   </div>
                 </div>
                 <div className="project-code flex justify-center">
-                  <div className="w-1/2 flex justify-between text-aqua font-mono">
+                  <div className="project-code-child-2 md:w-1/2 flex justify-between text-aqua font-mono">
                     <div>React</div>
                     <div>REST API</div>
                     <div>Firebase</div>
@@ -317,12 +317,12 @@ const LandingPage = () => {
             <div className="project-div flex py-10 justify-center">
               <div className="">
                 <div className="w-full flex justify-center items-center mb-10">
-                  <div className="text-aqua font-mono text-2xl">
+                  <div className="text-aqua text-center font-mono text-xl md:text-2xl">
                     Featured Project -{" "}
                     <a
                       href="https://quiz-app-tailwind-draft-1.web.app/"
                       target="_blank"
-                      className="text-gray3 font-sans font-semibold text-2xl hover:text-aqua2 link"
+                      className="text-gray3 font-sans font-semibold text-xl md:text-2xl hover:text-aqua2 link"
                     >
                       The Quiz Club
                     </a>
@@ -332,9 +332,9 @@ const LandingPage = () => {
               </div> */}
                 </div>
 
-                <div className="project-content flex mb-10 items-center">
+                <div className="project-content md:flex mb-10 items-center">
                   {/* <div className="project-libraries border border-red-500">code</div> */}
-                  <div className="project-photos flex items-center px-10">
+                  <div className="project-photos flex items-center md:px-10">
                     <a
                       href="https://quiz-app-tailwind-draft-1.web.app/"
                       target="_blank"
@@ -342,7 +342,7 @@ const LandingPage = () => {
                     ></a>
                     <img src={quiz} className="quiz-photo rounded-xl" />
                   </div>
-                  <div className="project-text pr-10 flex items-center font-sans">
+                  <div className="project-text md:pr-10 flex items-center font-sans">
                     <div>
                       <div className="text-gray4 text-center">
                         <a
@@ -379,7 +379,7 @@ const LandingPage = () => {
                   </div>
                 </div>
                 <div className="project-code flex justify-center">
-                  <div className="w-1/3 flex justify-between text-aqua font-mono">
+                  <div className="project-code-child md:w-1/3 flex justify-between text-aqua font-mono">
                     <div>React</div>
                     <div>Firebase</div>
                     <div>Tailwind</div>
@@ -394,13 +394,13 @@ const LandingPage = () => {
           <ScrollAnimation animateIn="animate__fadeInUp" animateOnce="true">
             <div className="project-div flex py-10 justify-center">
               <div className="">
-                <div className="w-full flex justify-center items-center mb-10">
-                  <div className="text-aqua font-mono text-2xl">
+                <div className="w-full flex text-center justify-center items-center mb-10">
+                  <div className="text-aqua font-mono text-xl md:text-2xl">
                     Featured Project -{" "}
                     <a
                       href="https://css-app-d35be.web.app/"
                       target="_blank"
-                      className="text-gray3 font-sans font-semibold text-2xl hover:text-aqua2 link"
+                      className="text-gray3 font-sans font-semibold text-xl md:text-2xl hover:text-aqua2 link"
                     >
                       Todoist Clone
                     </a>
@@ -410,9 +410,9 @@ const LandingPage = () => {
               </div> */}
                 </div>
 
-                <div className="project-content flex mb-10 items-center">
+                <div className="project-content md:flex mb-10 items-center">
                   {/* <div className="project-libraries border border-red-500">code</div> */}
-                  <div className="project-photos flex items-center px-10">
+                  <div className="project-photos flex items-center md:px-10">
                     <a
                       href="https://css-app-d35be.web.app/"
                       target="_blank"
@@ -420,7 +420,7 @@ const LandingPage = () => {
                     ></a>
                     <img src={css} className="css-photo rounded-xl" />
                   </div>
-                  <div className="project-text pr-10 flex items-center font-sans">
+                  <div className="project-text md:pr-10 flex items-center font-sans">
                     <div>
                       <div className="text-gray4 text-center">
                         My{" "}
@@ -448,7 +448,7 @@ const LandingPage = () => {
                   </div>
                 </div>
                 <div className="project-code flex justify-center">
-                  <div className="w-1/3 flex justify-between text-aqua font-mono">
+                  <div className="project-code-child md:w-1/3 flex justify-between text-aqua font-mono">
                     <div>HTML</div>
                     <div>CSS</div>
                     <div>Bootstrap</div>
@@ -459,7 +459,7 @@ const LandingPage = () => {
           </ScrollAnimation>
         </div>
         <div className="contact-page flex items-center justify-between">
-          <div className="email-wrapper items-end justify-end ml-10">
+          <div className="email-wrapper items-end justify-end ml-3 md:ml-10">
             <a
               href="https://github.com/JenselJ?tab=overview&from=2022-12-01&to=2022-12-08/"
               target="_blank"
@@ -493,26 +493,26 @@ const LandingPage = () => {
           <div className="flex items-center contact-wrapper">
             <ScrollAnimation animateIn="animate__fadeInUp" animateOnce="true">
               <div className="contact-main text-center">
-                <div className="text-aqua font-mono mb-4" ref={contact}>
+                <div className="text-aqua text-md font-mono mb-4" ref={contact}>
                   03. What's Next?
                 </div>
-                <div className="text-gray3 font-sans font-bold text-5xl mb-5">
+                <div className="text-gray3 font-sans font-bold text-3xl md:text-5xl mb-5">
                   Get In Touch
                 </div>
-                <div className="text-gray font-sans">
+                <div className="text-gray font-sans text-sm md:text-md">
                   I'm always open to new opportunities, or even just a friendly
                   conversation. If you'd like to contact me, please click below
                   and I'll do my best to get back to you!
                 </div>
                 <div className="w-full flex justify-center mt-10">
-                  <div className="border border-aqua2 text-aqua font-mono text-sm rounded-md px-6 py-4 hello">
+                  <div className="border border-aqua2 text-aqua font-mono text-xs md:text-sm rounded-md px-5 py-3 md:px-6 md:py-4 hello">
                     Say Hello
                   </div>{" "}
                 </div>
               </div>
             </ScrollAnimation>
           </div>
-          <div className="email-wrapper items-end justify-end mr-10">
+          <div className="email-wrapper items-end justify-end mr-3 md:mr-10">
             <a
               href="mailto:saneer.work@gmail.com"
               className="email-div text-gray4 font-mono text-xs mb-8"
