@@ -189,7 +189,7 @@
 
 .project-div {
   /* height: 600px; */
-  width: 1000px;
+  width: 980px;
   background-color: #112240;
   box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
   border-radius: 0.5rem;
@@ -220,8 +220,8 @@
 }
 
 .game-wrapper {
-  height: 333px;
-  width: 470px;
+  height: 325px;
+  width: 459px;
   background-color: #59ffd5;
   position: absolute;
   z-index: 11;
@@ -752,6 +752,54 @@
     width: 100%;
     height: 50%;
   }
+  .project-div {
+    width: 90%;
+    margin: auto;
+  }
+  .project-text {
+    padding-top: 5%;
+    width: 90%;
+    margin: auto;
+  }
+  .project-photos {
+    width: 580px;
+    margin: auto;
+  }
+  .game-wrapper {
+    width: 580px;
+    height: 411px;
+    opacity: 0;
+  }
+  .project-code-child {
+    width: 70%;
+  }
+  .project-code-child-2 {
+    width: 95%;
+  }
+  .job-wrapper {
+    width: 580px;
+    height: 379px;
+    opacity: 0;
+  }
+  .quiz-wrapper {
+    width: 580px;
+    height: 432px;
+    opacity: 0;
+  }
+  .css-wrapper {
+    width: 580px;
+    height: 363px;
+    opacity: 0;
+  }
+  .about-title {
+    margin-left: 5%;
+  }
+  .contact-main {
+    width: 400px;
+    height: 90%;
+    margin: auto;
+    margin-bottom: 20%;
+  }
 }
 
 @media (max-width: 639px) {
@@ -870,6 +918,7 @@
     width: 90%;
     height: 90%;
     margin: auto;
+    margin-bottom: 20%;
   }
   .line {
     height: 50px;

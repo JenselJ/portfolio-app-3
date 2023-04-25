@@ -496,7 +496,7 @@ const LandingPage = () => {
                 <div className="text-aqua text-md font-mono mb-4" ref={contact}>
                   03. What's Next?
                 </div>
-                <div className="text-gray3 font-sans font-bold text-3xl md:text-5xl mb-5">
+                <div className="text-gray3 font-sans font-bold text-3xl sm:text-4xl md:text-5xl mb-5">
                   Get In Touch
                 </div>
                 <div className="text-gray font-sans text-sm md:text-md">
