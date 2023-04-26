@@ -258,7 +258,7 @@ const LandingPage = () => {
 
                 <div className="project-content lg:flex mb-10 items-center">
                   {/* <div className="project-libraries border border-red-500">code</div> */}
-                  <div className="project-photos flex items-center md:px-10">
+                  <div className="project-photos flex items-center lg:px-10">
                     <a
                       href="https://job-app-two.web.app/"
                       target="_blank"
@@ -332,9 +332,9 @@ const LandingPage = () => {
               </div> */}
                 </div>
 
-                <div className="project-content md:flex mb-10 items-center">
+                <div className="project-content lg:flex mb-10 items-center">
                   {/* <div className="project-libraries border border-red-500">code</div> */}
-                  <div className="project-photos flex items-center md:px-10">
+                  <div className="project-photos flex items-center lg:px-10">
                     <a
                       href="https://quiz-app-tailwind-draft-1.web.app/"
                       target="_blank"
@@ -342,7 +342,7 @@ const LandingPage = () => {
                     ></a>
                     <img src={quiz} className="quiz-photo rounded-xl" />
                   </div>
-                  <div className="project-text md:pr-10 flex items-center font-sans">
+                  <div className="project-text md:px-3 lg:pr-10 flex items-center font-sans">
                     <div>
                       <div className="text-gray4 text-center">
                         <a
@@ -379,7 +379,7 @@ const LandingPage = () => {
                   </div>
                 </div>
                 <div className="project-code flex justify-center">
-                  <div className="project-code-child md:w-1/3 flex justify-between text-aqua font-mono">
+                  <div className="project-code-child lg:w-1/3 flex justify-between text-aqua font-mono">
                     <div>React</div>
                     <div>Firebase</div>
                     <div>Tailwind</div>
@@ -410,9 +410,9 @@ const LandingPage = () => {
               </div> */}
                 </div>
 
-                <div className="project-content md:flex mb-10 items-center">
+                <div className="project-content lg:flex mb-10 items-center">
                   {/* <div className="project-libraries border border-red-500">code</div> */}
-                  <div className="project-photos flex items-center md:px-10">
+                  <div className="project-photos flex items-center lg:px-10">
                     <a
                       href="https://css-app-d35be.web.app/"
                       target="_blank"
@@ -420,7 +420,7 @@ const LandingPage = () => {
                     ></a>
                     <img src={css} className="css-photo rounded-xl" />
                   </div>
-                  <div className="project-text md:pr-10 flex items-center font-sans">
+                  <div className="project-text md:px-3 lg:pr-10 flex items-center font-sans">
                     <div>
                       <div className="text-gray4 text-center">
                         My{" "}
@@ -448,7 +448,7 @@ const LandingPage = () => {
                   </div>
                 </div>
                 <div className="project-code flex justify-center">
-                  <div className="project-code-child md:w-1/3 flex justify-between text-aqua font-mono">
+                  <div className="project-code-child lg:w-1/3 flex justify-between text-aqua font-mono">
                     <div>HTML</div>
                     <div>CSS</div>
                     <div>Bootstrap</div>

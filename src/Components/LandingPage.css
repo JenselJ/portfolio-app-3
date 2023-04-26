@@ -644,6 +644,9 @@
   .photo {
     margin-right: 0%;
   }
+  .about-title {
+    margin-left: 13%;
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1279px) {
@@ -671,6 +674,9 @@
   }
   .photo {
     margin-right: 0%;
+  }
+  .about-title {
+    margin-left: 10%;
   }
 }
 
@@ -734,25 +740,25 @@
     width: 70%;
   }
   .project-code-child-2 {
-    width: 85%;
+    width: 80%;
   }
   .job-wrapper {
-    width: 540px;
-    height: 352px;
-    opacity: 0;
+    width: 580px;
+    height: 378px;
+    /* opacity: 0; */
   }
   .quiz-wrapper {
-    width: 540px;
-    height: 403px;
-    opacity: 0;
+    width: 580px;
+    height: 434px;
+    /* opacity: 0; */
   }
   .css-wrapper {
-    width: 540px;
-    height: 338px;
-    opacity: 0;
+    width: 580px;
+    height: 363px;
+    /* opacity: 0; */
   }
   .about-title {
-    margin-left: 5%;
+    margin-left: 8%;
   }
   /* .contact-main {
     width: 400px;
