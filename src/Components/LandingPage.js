@@ -171,9 +171,9 @@ const LandingPage = () => {
               </div> */}
                 </div>
 
-                <div className="project-content md:flex mb-10 items-center">
+                <div className="project-content lg:flex mb-10 items-center">
                   {/* <div className="project-libraries border border-red-500">code</div> */}
-                  <div className="project-photos flex items-center md:px-10">
+                  <div className="project-photos flex items-center lg:px-10">
                     <a
                       href="https://game-app-e3cd9.web.app/"
                       target="_blank"
@@ -181,7 +181,7 @@ const LandingPage = () => {
                     ></a>
                     <img src={game} className="game-photo rounded-xl" />
                   </div>
-                  <div className="project-text md:pr-10 flex items-center font-sans">
+                  <div className="project-text md:px-3 lg:pr-10 flex items-center font-sans">
                     <div>
                       <div className="text-gray4 text-center">
                         <a
@@ -211,7 +211,7 @@ const LandingPage = () => {
                   </div>
                 </div>
                 <div className="project-code flex justify-center">
-                  <div className="project-code-child md:w-1/3 flex justify-between text-aqua font-mono">
+                  <div className="project-code-child lg:w-1/3 flex justify-between text-aqua font-mono">
                     <div>React</div>
                     <div>CSS</div>
                     <div>JavaScript</div>
@@ -256,7 +256,7 @@ const LandingPage = () => {
               </div> */}
                 </div>
 
-                <div className="project-content md:flex mb-10 items-center">
+                <div className="project-content lg:flex mb-10 items-center">
                   {/* <div className="project-libraries border border-red-500">code</div> */}
                   <div className="project-photos flex items-center md:px-10">
                     <a
@@ -266,7 +266,7 @@ const LandingPage = () => {
                     ></a>
                     <img src={job} className="job-photo rounded-xl" />
                   </div>
-                  <div className="project-text md:pr-10 flex items-center font-sans">
+                  <div className="project-text md:px-3 lg:pr-10 flex items-center font-sans">
                     <div>
                       <div className="text-gray4 text-center">
                         <a
@@ -300,7 +300,7 @@ const LandingPage = () => {
                   </div>
                 </div>
                 <div className="project-code flex justify-center">
-                  <div className="project-code-child-2 md:w-1/2 flex justify-between text-aqua font-mono">
+                  <div className="project-code-child-2 lg:w-1/2 flex justify-between text-aqua font-mono">
                     <div>React</div>
                     <div>REST API</div>
                     <div>Firebase</div>

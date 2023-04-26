@@ -235,8 +235,8 @@
 }
 
 .job-wrapper {
-  height: 308px;
-  width: 470px;
+  height: 300px;
+  width: 459px;
   background-color: #59ffd5;
   position: absolute;
   z-index: 11;
@@ -250,8 +250,8 @@
 }
 
 .quiz-wrapper {
-  height: 351px;
-  width: 470px;
+  height: 344px;
+  width: 459px;
   background-color: #59ffd5;
   position: absolute;
   z-index: 11;
@@ -265,8 +265,8 @@
 }
 
 .css-wrapper {
-  height: 293px;
-  width: 470px;
+  height: 287px;
+  width: 459px;
   background-color: #59ffd5;
   position: absolute;
   z-index: 11;
@@ -712,6 +712,54 @@
     width: 100%;
     height: 50%;
   }
+  .project-div {
+    width: 720px;
+    margin: auto;
+  }
+  .project-text {
+    padding-top: 5%;
+    width: 90%;
+    margin: auto;
+  }
+  .project-photos {
+    width: 580px;
+    margin: auto;
+  }
+  .game-wrapper {
+    width: 580px;
+    height: 411px;
+    /* opacity: 0; */
+  }
+  .project-code-child {
+    width: 70%;
+  }
+  .project-code-child-2 {
+    width: 85%;
+  }
+  .job-wrapper {
+    width: 540px;
+    height: 352px;
+    opacity: 0;
+  }
+  .quiz-wrapper {
+    width: 540px;
+    height: 403px;
+    opacity: 0;
+  }
+  .css-wrapper {
+    width: 540px;
+    height: 338px;
+    opacity: 0;
+  }
+  .about-title {
+    margin-left: 5%;
+  }
+  /* .contact-main {
+    width: 400px;
+    height: 90%;
+    margin: auto;
+    margin-bottom: 20%;
+  } */
 }
 
 @media (min-width: 640px) and (max-width: 767px) {
@@ -762,12 +810,12 @@
     margin: auto;
   }
   .project-photos {
-    width: 580px;
+    width: 540px;
     margin: auto;
   }
   .game-wrapper {
-    width: 580px;
-    height: 411px;
+    width: 540px;
+    height: 382px;
     opacity: 0;
   }
   .project-code-child {
@@ -777,18 +825,18 @@
     width: 95%;
   }
   .job-wrapper {
-    width: 580px;
-    height: 379px;
+    width: 540px;
+    height: 352px;
     opacity: 0;
   }
   .quiz-wrapper {
-    width: 580px;
-    height: 432px;
+    width: 540px;
+    height: 403px;
     opacity: 0;
   }
   .css-wrapper {
-    width: 580px;
-    height: 363px;
+    width: 540px;
+    height: 338px;
     opacity: 0;
   }
   .about-title {
