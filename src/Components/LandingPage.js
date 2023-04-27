@@ -72,7 +72,7 @@ const LandingPage = () => {
                   </div>
                   <div className="text-gray3 flex items-center">
                     <div
-                      className="text-xs sm:text-md mr-3 sm:mr-8 hover:cursor-pointer hover:text-aqua home"
+                      className="text-xs sm:text-sm lg:text-base mr-3 sm:mr-8 hover:cursor-pointer hover:text-aqua home"
                       onClick={() => {
                         setId(id + 1);
                       }}
@@ -83,19 +83,19 @@ const LandingPage = () => {
                   <a className="text-aqua">2.</a> About
                 </div> */}
                     <div
-                      className="text-xs sm:text-md mr-3 sm:mr-8 hover:cursor-pointer hover:text-aqua project-nav"
+                      className="text-xs sm:text-sm lg:text-base mr-3 sm:mr-8 hover:cursor-pointer hover:text-aqua project-nav"
                       onClick={handleProjectScroll}
                     >
                       <a className="text-aqua num">02. </a>Projects
                     </div>
                     <div
-                      className="text-xs sm:text-md mr-3 sm:mr-8 hover:cursor-pointer hover:text-aqua contact-nav"
+                      className="text-xs sm:text-sm lg:text-base mr-3 sm:mr-8 hover:cursor-pointer hover:text-aqua contact-nav"
                       onClick={handleContactScroll}
                     >
                       <a className="text-aqua num">03. </a>Contact
                     </div>
                     <div
-                      className="text-xs sm:text-md border border-aqua2 resume text-aqua2 rounded-md px-2.5 py-1.5 sm:px-3 sm:py-2"
+                      className="text-xs sm:text-sm lg:text-base border border-aqua2 resume text-aqua2 rounded-md px-2.5 py-1.5 sm:px-3 sm:py-2"
                       onClick={onResumeClick}
                     >
                       Resume
@@ -115,9 +115,16 @@ const LandingPage = () => {
                       </div>
                       <div className="mt-4 sm:mt-8 text-xs sm:text-sm lg:text-md xl:text-lg 2xl:text-lg welcome-text-2">
                         I'm a junior web developer working part-time at{" "}
-                        <a className="text-aqua2 link">SurryHQ.</a> My goal
-                        right now is to transition into a full-time role where I
-                        can grow my skillset and break deeper into the industry.
+                        <a
+                          href="https://surryhq.com/"
+                          target="_blank"
+                          className="text-aqua2 link"
+                        >
+                          SurryHQ.
+                        </a>{" "}
+                        My goal right now is to transition into a full-time role
+                        where I can grow my skillset and break deeper into the
+                        industry.
                       </div>
                       <div className="mt-2 sm:mt-4 text-xs sm:text-sm lg:text-md xl:text-lg welcome-text-3">
                         I'm comfortable working full-stack but my strength lies
@@ -138,88 +145,90 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
-        <div className="about-title flex items-center pt-10" ref={projects}>
-          <ScrollAnimation animateIn="animate__fadeInUp" animateOnce="true">
-            <div className="flex items-center">
-              <div className="text-gray2 font-sans text-xl md:text-2xl">
-                <a className="text-aqua font-mono">02.</a>
-                <a className="font-bold"> Some things I've built</a>
-              </div>
-
-              <div className="line-2"></div>
-            </div>
-          </ScrollAnimation>
-        </div>
 
         <div className="projects flex items-center justify-center">
-          <ScrollAnimation animateIn="animate__fadeInUp" animateOnce="true">
-            <div className="project-div flex py-10 justify-center">
-              <div className="pb-0 mb-0">
-                <div className="w-full flex justify-center items-center mb-10">
-                  <div className="text-aqua font-mono text-center text-xl md:text-2xl">
-                    Featured Project -{" "}
-                    <a
-                      className="text-gray3 font-sans font-semibold text-xl md:text-2xl link hover:cursor-pointer hover:text-aqua2"
-                      href="https://game-app-e3cd9.web.app/"
-                      target="_blank"
-                    >
-                      Megaman VS Samus
-                    </a>
-                  </div>
-                  {/* <div className="text-gray3 font-sans font-semibold text-2xl">
-                Megaman VS Samus
-              </div> */}
+          <div>
+            <div className="about-title flex items-center pt-10" ref={projects}>
+              {/* <ScrollAnimation animateIn="animate__fadeInUp" animateOnce="true"> */}
+              <div className="flex items-center about-child">
+                <div className="text-gray2 font-sans text-xl md:text-2xl">
+                  <a className="text-aqua font-mono">02.</a>
+                  <a className="font-bold"> Some things I've built</a>
                 </div>
 
-                <div className="project-content lg:flex mb-10 items-center">
-                  {/* <div className="project-libraries border border-red-500">code</div> */}
-                  <div className="project-photos flex items-center lg:px-10">
-                    <a
-                      href="https://game-app-e3cd9.web.app/"
-                      target="_blank"
-                      className="game-wrapper rounded-xl"
-                    ></a>
-                    <img src={game} className="game-photo rounded-xl" />
+                <div className="line-2"></div>
+              </div>
+              {/* </ScrollAnimation> */}
+            </div>
+            <ScrollAnimation animateIn="animate__fadeInUp" animateOnce="true">
+              <div className="project-div flex py-10 justify-center">
+                <div className="pb-0 mb-0">
+                  <div className="w-full flex justify-center items-center mb-10">
+                    <div className="text-aqua font-mono text-center text-xl md:text-2xl">
+                      Featured Project -{" "}
+                      <a
+                        className="text-gray3 font-sans font-semibold text-xl md:text-2xl link hover:cursor-pointer hover:text-aqua2"
+                        href="https://game-app-e3cd9.web.app/"
+                        target="_blank"
+                      >
+                        Megaman VS Samus
+                      </a>
+                    </div>
+                    {/* <div className="text-gray3 font-sans font-semibold text-2xl">
+                Megaman VS Samus
+              </div> */}
                   </div>
-                  <div className="project-text md:px-3 lg:pr-10 flex items-center font-sans">
-                    <div>
-                      <div className="text-gray4 text-center">
-                        <a
-                          className="text-aqua2 link"
-                          href="https://game-app-e3cd9.web.app/"
-                          target="_blank"
-                        >
-                          Megaman vs Samus
-                        </a>{" "}
-                        is a simple turn-based combat game that I had a lot of
-                        fun making. Users play as Megaman an choose between
-                        three ability options to take down the AI opponent
-                        Samus. In this app I used React hooks to compute the AI
-                        opponent choices, create the batle sequence and
-                        configure narrator announcements.
-                      </div>
-                      <div className="text-gray4 text-center mt-3">
-                        The styling is done with pure CSS and some basic CSS
-                        animation are used too. I also used some more complex
-                        Javascript syntax to build the battle sequence, such as
-                        an IIFE (immediately invoked function expression).
-                      </div>
-                      {/* <div className="text-gray4 text-center mt-3">
+
+                  <div className="project-content lg:flex mb-10 items-center">
+                    {/* <div className="project-libraries border border-red-500">code</div> */}
+                    <div className="project-photos flex items-center lg:px-10">
+                      <a
+                        href="https://game-app-e3cd9.web.app/"
+                        target="_blank"
+                        className="game-wrapper rounded-xl"
+                      ></a>
+                      <img src={game} className="game-photo rounded-xl" />
+                    </div>
+                    <div className="project-text md:px-3 lg:pr-10 flex items-center font-sans">
+                      <div>
+                        <div className="text-gray4 text-center">
+                          <a
+                            className="text-aqua2 link"
+                            href="https://game-app-e3cd9.web.app/"
+                            target="_blank"
+                          >
+                            Megaman vs Samus
+                          </a>{" "}
+                          is a simple turn-based combat game that I had a lot of
+                          fun making. Users play as Megaman an choose between
+                          three ability options to take down the AI opponent
+                          Samus. In this app I used React hooks to compute the
+                          AI opponent choices, create the batle sequence and
+                          configure narrator announcements.
+                        </div>
+                        <div className="text-gray4 text-center mt-3">
+                          The styling is done with pure CSS and some basic CSS
+                          animation are used too. I also used some more complex
+                          Javascript syntax to build the battle sequence, such
+                          as an IIFE (immediately invoked function expression).
+                        </div>
+                        {/* <div className="text-gray4 text-center mt-3">
                     No login is needed for this app. Good luck defeating Samus!{" "}
                   </div> */}
+                      </div>
+                    </div>
+                  </div>
+                  <div className="project-code flex justify-center">
+                    <div className="project-code-child lg:w-1/3 flex justify-between text-aqua font-mono">
+                      <div>React</div>
+                      <div>CSS</div>
+                      <div>JavaScript</div>
                     </div>
                   </div>
                 </div>
-                <div className="project-code flex justify-center">
-                  <div className="project-code-child lg:w-1/3 flex justify-between text-aqua font-mono">
-                    <div>React</div>
-                    <div>CSS</div>
-                    <div>JavaScript</div>
-                  </div>
-                </div>
               </div>
-            </div>
-          </ScrollAnimation>
+            </ScrollAnimation>
+          </div>
         </div>
         {/* <div className="about-div flex items-center justify-center">
         <div className="about-main flex">
@@ -505,9 +514,12 @@ const LandingPage = () => {
                   and I'll do my best to get back to you!
                 </div>
                 <div className="w-full flex justify-center mt-10">
-                  <div className="border border-aqua2 text-aqua font-mono text-xs md:text-sm rounded-md px-5 py-3 md:px-6 md:py-4 hello">
+                  <a
+                    href="mailto:saneer.work@gmail.com"
+                    className="border border-aqua2 text-aqua font-mono text-xs md:text-sm rounded-md px-5 py-3 md:px-6 md:py-4 hello"
+                  >
                     Say Hello
-                  </div>{" "}
+                  </a>{" "}
                 </div>
               </div>
             </ScrollAnimation>
