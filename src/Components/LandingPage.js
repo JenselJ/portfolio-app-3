@@ -4,6 +4,7 @@ import game from "../assets/game.png";
 import quiz from "../assets/quiz.png";
 import job from "../assets/job.png";
 import css from "../assets/css.png";
+import surry from "../assets/surry.png";
 import { useRef, useState } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 
@@ -168,10 +169,10 @@ const LandingPage = () => {
                       Featured Project -{" "}
                       <a
                         className="text-gray3 font-sans font-semibold text-xl md:text-2xl link hover:cursor-pointer hover:text-aqua2"
-                        href="https://game-app-e3cd9.web.app/"
+                        href="https://surryhq.com/"
                         target="_blank"
                       >
-                        Megaman VS Samus
+                        SurryHQ
                       </a>
                     </div>
                     {/* <div className="text-gray3 font-sans font-semibold text-2xl">
@@ -183,34 +184,48 @@ const LandingPage = () => {
                     {/* <div className="project-libraries border border-red-500">code</div> */}
                     <div className="project-photos flex items-center lg:px-10">
                       <a
-                        href="https://game-app-e3cd9.web.app/"
+                        href="https://surryhq.com/"
                         target="_blank"
-                        className="game-wrapper rounded-xl"
+                        className="surry-wrapper rounded-xl"
                       ></a>
-                      <img src={game} className="game-photo rounded-xl" />
+                      <img src={surry} className="surry-photo rounded-xl" />
                     </div>
                     <div className="project-text md:px-3 lg:pr-10 flex items-center font-sans">
                       <div>
                         <div className="text-gray4 text-center">
                           <a
                             className="text-aqua2 link"
-                            href="https://game-app-e3cd9.web.app/"
+                            href="https://surryhq.com/"
                             target="_blank"
                           >
-                            Megaman vs Samus
+                            SurryHQ
                           </a>{" "}
-                          is a simple turn-based combat game that I had a lot of
-                          fun making. Users play as Megaman an choose between
-                          three ability options to take down the AI opponent
-                          Samus. In this app I used React hooks to compute the
-                          AI opponent choices, create the batle sequence and
-                          configure narrator announcements.
+                          is a Digital Consultancy that offers web-based
+                          solution for medium and small businesses as well as
+                          tutoring services for up-and-coming tech enthusiasts.
+                          As part of my role at SurryHQ, I was a major builder
+                          of our official website - in particular the{" "}
+                          <a
+                            className="text-aqua2 link"
+                            href="https://surryhq.com/"
+                            target="_blank"
+                          >
+                            landing page
+                          </a>{" "}
+                          and{" "}
+                          <a
+                            className="text-aqua2 link"
+                            href="https://surryhq.com/services"
+                            target="_blank"
+                          >
+                            services page
+                          </a>
+                          .
                         </div>
                         <div className="text-gray4 text-center mt-3">
-                          The styling is done with pure CSS and some basic CSS
-                          animation are used too. I also used some more complex
-                          Javascript syntax to build the battle sequence, such
-                          as an IIFE (immediately invoked function expression).
+                          The website is built with Angular and was translated
+                          from a Figma design. Styling is done with pure CSS and
+                          includes some simple CSS animations.
                         </div>
                         {/* <div className="text-gray4 text-center mt-3">
                     No login is needed for this app. Good luck defeating Samus!{" "}
@@ -220,9 +235,9 @@ const LandingPage = () => {
                   </div>
                   <div className="project-code flex justify-center">
                     <div className="project-code-child lg:w-1/3 flex justify-between text-aqua font-mono">
-                      <div>React</div>
+                      <div>Angular</div>
                       <div>CSS</div>
-                      <div>JavaScript</div>
+                      <div>CSS Animations</div>
                     </div>
                   </div>
                 </div>
@@ -245,6 +260,78 @@ const LandingPage = () => {
           <div className="text-aqua">photo</div>
         </div>
       </div> */}
+
+        <div className="flex mt-32 items-center justify-center">
+          <ScrollAnimation animateIn="animate__fadeInUp" animateOnce="true">
+            <div className="project-div flex py-10 justify-center">
+              <div className="pb-0 mb-0">
+                <div className="w-full flex justify-center items-center mb-10">
+                  <div className="text-aqua font-mono text-center text-xl md:text-2xl">
+                    Featured Project -{" "}
+                    <a
+                      className="text-gray3 font-sans font-semibold text-xl md:text-2xl link hover:cursor-pointer hover:text-aqua2"
+                      href="https://game-app-e3cd9.web.app/"
+                      target="_blank"
+                    >
+                      Megaman VS Samus
+                    </a>
+                  </div>
+                  {/* <div className="text-gray3 font-sans font-semibold text-2xl">
+                Megaman VS Samus
+              </div> */}
+                </div>
+
+                <div className="project-content lg:flex mb-10 items-center">
+                  {/* <div className="project-libraries border border-red-500">code</div> */}
+                  <div className="project-photos flex items-center lg:px-10">
+                    <a
+                      href="https://game-app-e3cd9.web.app/"
+                      target="_blank"
+                      className="game-wrapper rounded-xl"
+                    ></a>
+                    <img src={game} className="game-photo rounded-xl" />
+                  </div>
+                  <div className="project-text md:px-3 lg:pr-10 flex items-center font-sans">
+                    <div>
+                      <div className="text-gray4 text-center">
+                        <a
+                          className="text-aqua2 link"
+                          href="https://game-app-e3cd9.web.app/"
+                          target="_blank"
+                        >
+                          Megaman vs Samus
+                        </a>{" "}
+                        is a simple turn-based combat game that I had a lot of
+                        fun making. Users play as Megaman an choose between
+                        three ability options to take down the AI opponent
+                        Samus. In this app I used React hooks to compute the AI
+                        opponent choices, create the batle sequence and
+                        configure narrator announcements.
+                      </div>
+                      <div className="text-gray4 text-center mt-3">
+                        The styling is done with pure CSS and some basic CSS
+                        animation are used too. I also used some more complex
+                        Javascript syntax to build the battle sequence, such as
+                        an IIFE (immediately invoked function expression).
+                      </div>
+                      {/* <div className="text-gray4 text-center mt-3">
+                    No login is needed for this app. Good luck defeating Samus!{" "}
+                  </div> */}
+                    </div>
+                  </div>
+                </div>
+                <div className="project-code flex justify-center">
+                  <div className="project-code-child lg:w-1/3 flex justify-between text-aqua font-mono">
+                    <div>React</div>
+                    <div>CSS</div>
+                    <div>JavaScript</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ScrollAnimation>
+        </div>
+
         <div className="flex mt-32 items-center justify-center">
           <ScrollAnimation animateIn="animate__fadeInUp" animateOnce="true">
             <div className="project-div flex py-10 justify-center">

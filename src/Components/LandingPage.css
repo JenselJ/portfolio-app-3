@@ -288,6 +288,29 @@
   /* position: absolute; */
 }
 
+.surry-wrapper {
+  height: 314px;
+  width: 459px;
+  background-color: #59ffd5;
+  position: absolute;
+  z-index: 11;
+  transition: opacity 0.5s;
+  opacity: 40%;
+}
+
+.surry-wrapper:hover {
+  transition: opacity 0.5s;
+  opacity: 0;
+}
+
+.surry-photo {
+  /* opacity: 70%; */
+  /* height: 300px;
+  width: 300px; */
+  z-index: 10;
+  /* position: absolute; */
+}
+
 .project-text {
   width: 45%;
   height: 100%;
@@ -737,6 +760,11 @@
     height: 411px;
     /* opacity: 0; */
   }
+  .surry-wrapper {
+    width: 580px;
+    height: 397px;
+    /* opacity: 0; */
+  }
   .project-code-child {
     width: 70%;
   }
@@ -823,6 +851,11 @@
   .game-wrapper {
     width: 540px;
     height: 382px;
+    opacity: 0;
+  }
+  .surry-wrapper {
+    width: 540px;
+    height: 370px;
     opacity: 0;
   }
   .project-code-child {
@@ -940,6 +973,11 @@
     height: 227px;
     opacity: 0;
   }
+  .surry-wrapper {
+    width: 320px;
+    height: 219px;
+    opacity: 0;
+  }
   .project-code-child {
     width: 70%;
   }
@@ -979,5 +1017,8 @@
   }
   .line {
     height: 50px;
+  }
+  .base-div {
+    height: 90%;
   }
 }
